@@ -19,12 +19,26 @@
       <input type="checkbox" v-model="terms" required>
       <label>Accept Terms and Conditions</label>
   </div>
+
+  <div>
+      <input type="checkbox" value="mario" v-model="names">
+      <label>Mario</label>
+  </div>
+  <div>
+      <input type="checkbox" value="yoshi" v-model="names">
+      <label>Yoshi</label>
+  </div>
+  <div>
+      <input type="checkbox" value="peach" v-model="names">
+      <label>Peach</label>
+  </div>
 </form>
 
   <p>Email: {{ email }}</p>
   <p>Password: {{ password }}</p>
   <p>Role: {{ role }}</p>
   <p>Terms Accepted: {{ terms }}</p>
+  <p>Names: {{ names }}</p>
 </template>
 
 <script>
@@ -35,6 +49,12 @@ export default {
             password: '',
             role: 'placeholder',
             terms: false,
+            names: [],
+        }
+    },
+    methods() {
+        return {
+
         }
     }
 };

@@ -50,8 +50,8 @@ html {
   color: black;
   font-size: 32px;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 38%;
+  left: 36%;
   background: white;
   border-radius: 16px;
   padding: 8px 16px;
@@ -66,9 +66,16 @@ button {
   letter-spacing: 1px;
   cursor: pointer;
   margin: 10px;
+  font-weight: 900;
 }
 button[disabled] {
   opacity: 0.2;
   cursor: not-allowed;
+}
+.rank {
+  font-weight: 900;
+  text-decoration: underline;
+  color: white;
+  background: #0faf87;
 }
 </style>

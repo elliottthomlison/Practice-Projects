@@ -12,12 +12,12 @@ export default {
       }
   },
   mounted() {
-      if (this.score < 300) {
+      if (this.score < 500) {
           this.rank = 'Inhuman Reflexes'
-      } else if (this.score < 600 ) {
+      } else if (this.score < 800 ) {
           this.rank = "Quickish Reflexes"
       } else {
-          this.rank = "Are You Even Trying Reflexes"
+          this.rank = "Are-You-Even-Trying-Reflexes"
       }
   }
 };

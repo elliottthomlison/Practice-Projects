@@ -13,12 +13,16 @@
     <script src="app.js" defer></script>
   </head>
   <body id="body">
-
     <!-- <p>{{ filteredBooks }}</p> -->
 
     <h1>{{ title }}</h1>
     <h3>This page was written by {{ author }}.</h3>
-    <h4>He loves himself some tasty tasty {{ candy }}. He eats <button v-on:click="amount++">{{ amount }}</button> a day, but he should resist his craving so he puts <button v-on:click="amount--">one</button> one back.</h4> 
+    <h4>
+      He loves himself some tasty tasty {{ candy }}. He eats
+      <button v-on:click="amount++">{{ amount }}</button> a day, but he should
+      resist his craving so he puts
+      <button v-on:click="amount--">one</button> one back.
+    </h4>
     <!-- <h1>If you want to change the title...</h1>
     <h2 @click="title = 'Look At It Change'">here</h2> -->
     <h2 @click="changeTitle1">here</h2>
@@ -30,14 +34,16 @@
       <span>Toggle Change</span>
     </button>
 
-    <hr>
+    <hr />
 
     <div class="box" id="mouseover" @mouseover="handleEvent">Mouse Over</div>
     <div class="box" @mouseleave="mouseLeave">{{ mouseLeaves }}</div>
     <div class="box" @dblclick="handleEvent">{{ test }}</div>
-    <div class="box" @mousemove="handleMouseMove">Mouse Move - {{ x }} & {{ y }}</div>
+    <div class="box" @mousemove="handleMouseMove">
+      Mouse Move - {{ x }} & {{ y }}
+    </div>
 
-    <hr>
+    <hr />
 
     <div>
       <!-- method one -->
@@ -46,12 +52,16 @@
         <p>{{ books[1].title }} - {{ books[1].author }}</p>
         <p>{{ books[2].title }} - {{ books[2].author }}</p>
       </div>
-      <hr>
+      <hr />
       <div v-if="showBooks">
         <ul>
           <!-- each book in the books array-->
-          <li @click="toggleFav(book)" v-for="book in filteredBooks" :class="{ fav: book.isFav }">
-            <img :src="book.img" :alt="book.title"> 
+          <li
+            @click="toggleFav(book)"
+            v-for="book in filteredBooks"
+            :class="{ fav: book.isFav }"
+          >
+            <img :src="book.img" :alt="book.title" />
             <h3>{{ book.title }}</h3>
             <p>{{ book.author }}</p>
           </li>

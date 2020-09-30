@@ -13,7 +13,7 @@ const app = Vue.createApp({
       showBooks: true,
       books: [
         { title: 'The Name of Wind', author: 'Butt Boogerman', img: 'assets/1.jpg', isFav: true},
-        { title: 'Brandon Sanderson', author: 'Booger Buttman', img: 'assets/2.jpg', isFav: false},
+        { title: 'Brandon Sanderson', author: 'Booger Buttman', img: 'assets/2.jpg', isFav: true},
         { title: 'The Final Empire', author: 'Man Manman', img: 'assets/3.jpg', isFav: true},
       ]
     }
@@ -55,6 +55,12 @@ const app = Vue.createApp({
       this.y = event.offsetY;
     },
   },
+  //a way to define data properties that rely on other data 
+  computed: {
+    filteredBooks() {
+      return this.books.filter((book) => book.isFav)
+    }
+  }
 })
 
 app.mount('#body')

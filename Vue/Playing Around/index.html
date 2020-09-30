@@ -13,6 +13,9 @@
     <script src="app.js" defer></script>
   </head>
   <body id="body">
+
+    <!-- <p>{{ filteredBooks }}</p> -->
+
     <h1>{{ title }}</h1>
     <h3>This page was written by {{ author }}.</h3>
     <h4>He loves himself some tasty tasty {{ candy }}. He eats <button v-on:click="amount++">{{ amount }}</button> a day, but he should resist his craving so he puts <button v-on:click="amount--">one</button> one back.</h4> 
@@ -47,7 +50,7 @@
       <div v-if="showBooks">
         <ul>
           <!-- each book in the books array-->
-          <li @click="toggleFav(book)" v-for="book in books" :class="{ fav: book.isFav }">
+          <li @click="toggleFav(book)" v-for="book in filteredBooks" :class="{ fav: book.isFav }">
             <img :src="book.img" :alt="book.title"> 
             <h3>{{ book.title }}</h3>
             <p>{{ book.author }}</p>

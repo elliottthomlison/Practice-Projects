@@ -12,9 +12,9 @@ const app = Vue.createApp({
       test: 'You can double click, if you want.',
       showBooks: true,
       books: [
-        { title: 'Book', author: 'BookA', img: 'assets/1.jpg', isFav: true},
-        { title: 'Book1', author: 'Book1A', img: 'assets/2.jpg', isFav: false},
-        { title: 'Book2', author: 'Book2A', img: 'assets/3.jpg', isFav: true},
+        { title: 'The Name of Wind', author: 'Butt Boogerman', img: 'assets/1.jpg', isFav: true},
+        { title: 'Brandon Sanderson', author: 'Booger Buttman', img: 'assets/2.jpg', isFav: false},
+        { title: 'The Final Empire', author: 'Man Manman', img: 'assets/3.jpg', isFav: true},
       ]
     }
   },

@@ -10,3 +10,7 @@
 #mouseover:hover {
   background-color: red;
 }
+
+.fav {
+  background-color: rgba(247, 17, 17, .5);
+}

@@ -10,9 +10,18 @@ const app = Vue.createApp({
       y: 0,
       mouseLeaves: "Hello",
       test: 'You can double click, if you want.',
+      showBooks: true,
+      books: [
+        { title: 'Book', author: 'BookA'},
+        { title: 'Book1', author: 'Book1A'},
+        { title: 'Book2', author: 'Book2A'},
+      ]
     }
   },
   methods: {
+    toggleShowBooks( ){
+      this.showBooks = !this.showBooks
+    },
     changeTitle1() {
       // console.log('Test')
       this.title = 'Words of Radiance'

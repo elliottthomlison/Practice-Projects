@@ -34,5 +34,24 @@
     <div class="box" @dblclick="handleEvent">{{ test }}</div>
     <div class="box" @mousemove="handleMouseMove">Mouse Move - {{ x }} & {{ y }}</div>
 
+    <hr>
+
+    <div>
+      <!-- method one -->
+      <div v-if="showBooks">
+        <p>{{ books[0].title }} - {{ books[0].author }}</p>
+        <p>{{ books[1].title }} - {{ books[1].author }}</p>
+        <p>{{ books[2].title }} - {{ books[2].author }}</p>
+      </div>
+      <div v-if="showBooks">
+        <ul>
+          <!-- each book in the books array-->
+          <li v-for="books in books">
+            <h3>{{ books.title }}</h3>
+            <p>{{ books.author }}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

@@ -10,13 +10,16 @@ const app = Vue.createApp({
   },
   methods: {
     changeTitle1() {
-      console.log('Test')
+      // console.log('Test')
       this.title = 'Words of Radiance'
       this.candy = 'Booty de Vicky'
       this.author = 'Shakespeare'
     },
     toggleShowBooks() {
       this.changeTitle = !this.changeTitle;
+    },
+    handleEvent() {
+      console.log('Test')
     }
   },
 })

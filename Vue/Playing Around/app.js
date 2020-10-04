@@ -9,7 +9,7 @@ const app = Vue.createApp({
       x: 0,
       y: 0,
       mouseLeaves: "Hello",
-      test: 'test',
+      test: 'You can double click, if you want.',
     }
   },
   methods: {
@@ -23,7 +23,12 @@ const app = Vue.createApp({
       this.changeTitle = !this.changeTitle;
     },
     handleEvent() {
-      this.test = 'Boom Double Clicked'
+      console.log('test')
+      if (this.test === 'Double Click?') {
+        return this.test = 'Double Clicked'
+      } else {
+        return this.test = 'Double Click?'
+      }
     },
     mouseLeave() {
       if (this.mouseLeaves === 'Hello') {

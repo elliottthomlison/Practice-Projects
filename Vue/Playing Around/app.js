@@ -5,13 +5,18 @@ const app = Vue.createApp({
       author: "Elliott Thomlison",
       candy: "Mini Eggs",
       amount: 0,
+      changeTitle: true,
     }
   },
   methods: {
-    changeTitle() {
-      // console.log('Test')
-      // if ((this.title = 'Words of Radiance') && (this.candy = 'Booty de Vicky') && (this.author = 'Shakespeare')) {
-      // }
+    changeTitle1() {
+      console.log('Test')
+      this.title = 'Words of Radiance'
+      this.candy = 'Booty de Vicky'
+      this.author = 'Shakespeare'
+    },
+    toggleShowBooks() {
+      this.changeTitle = !this.changeTitle;
     }
   },
 })

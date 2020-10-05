@@ -18,6 +18,15 @@
     <h4>He loves himself some tasty tasty {{ candy }}. He eats <button v-on:click="amount++">{{ amount }}</button> a day, but he should resist his craving so he puts <button v-on:click="amount--">one</button> one back.</h4> 
     <!-- <h1>If you want to change the title...</h1>
     <h2 @click="title = 'Look At It Change'">here</h2> -->
-    <h2 @click="changeTitle">here</h2>
+    <h2 @click="changeTitle1">here</h2>
+    <h2 v-if="changeTitle">Hide</h2>
+    <!-- <h2 v-if="!changeTitle">Show</h2> -->
+    <h2 v-else>Show</h2>
+
+
+    <button @click="toggleShowBooks">
+      <span>Toggle Change</span>
+    </button>
+
   </body>
 </html>

@@ -72,12 +72,12 @@ p {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
 }
 
-.blue {
+.user1 {
   background-color: blue;
   color: white;
 }
 
-.purple {
+.user2 {
   background-color: purple;
   color: white;
 }

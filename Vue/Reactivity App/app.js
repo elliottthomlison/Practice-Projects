@@ -18,12 +18,14 @@ const app = Vue.createApp({
         return "Perfect amount!";
       } else if (this.counter > 37) {
         return "Too much!";
+      } else if (this.counter < 37 && this.counter > 0) {
+        return "Not there yet!"
       }
     },
   },
   watch: {
     counter(value) {
-      if (value > 0) {
+      if (value === 37) {
         const that = this;
         setTimeout(function () {
           that.counter = 0;

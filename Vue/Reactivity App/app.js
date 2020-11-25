@@ -11,7 +11,16 @@ const app = Vue.createApp({
     subtract(num) {
       this.counter = this.counter - num;
     },
-  }
+  },
+  computed: {
+    counterCheck() {
+      if (this.counter === 37){
+        return 'Perfect amount!'
+      } else if (this.counter > 37){
+        return 'Too much!'
+      } 
+    }
+  },
 });
 
 app.mount('#assignment');

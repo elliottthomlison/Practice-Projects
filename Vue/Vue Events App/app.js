@@ -40,7 +40,7 @@ const app = Vue.createApp({
       if (this.name === '') {
         return '';
       }
-      return this.name + ' ' + 'Schwarzmuller';
+      return this.name + ' ' + this.lastName;
     },
   },
 });

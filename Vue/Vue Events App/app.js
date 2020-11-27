@@ -34,6 +34,15 @@ const app = Vue.createApp({
       this.name = '';
     }
   },
+  computed: {
+    fullname() {
+      console.log('Running again...');
+      if (this.name === '') {
+        return '';
+      }
+      return this.name + ' ' + 'Schwarzmuller';
+    },
+  },
 });
 
 app.mount("#events");

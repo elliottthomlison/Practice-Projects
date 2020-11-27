@@ -7,8 +7,8 @@ const app = Vue.createApp({
     };
   },
   methods: {
-    setName(event, lastName) {
-      this.name = event.target.value + " " + lastName;
+    setName(event) {
+      this.name = event.target.value;
     },
     confirmInput() {
       this.confirmedName = this.name;

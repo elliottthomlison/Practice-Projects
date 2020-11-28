@@ -59,7 +59,7 @@ export default {
     },
     methods: {
         addSkill(event) {
-            if (e.key === ',' && this.tempSkill) {
+            if (event.key === ',' && this.tempSkill) {
                 this.skills.push(this.tempSkill)
                 this.tempSkill === ''
             }

@@ -5,7 +5,9 @@ const app = Vue.createApp({
     };
   },
   methods: {
-
+    showAlert() {
+      alert('Alert!');
+    },
   }
 })
 

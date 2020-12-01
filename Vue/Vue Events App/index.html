@@ -24,7 +24,7 @@
       <!-- <input type="text" v-on:input="setName"> -->
       <input type="text" v-on:input="setName($event, 'Thomlison')">
       <p>Your Full Name: {{ name }}</p>
-      <form>
+      <form v-on:submit.prevent="submitForm">
         <input type="text">
         <button>Sign Up</button> 
       </form>

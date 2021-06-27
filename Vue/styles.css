@@ -15,6 +15,7 @@ body {
   max-width: 40rem;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background-color: red;
 }
 
 label, input {
@@ -37,4 +38,14 @@ li {
   margin: 1rem 0;
   padding: 1rem;
   border: 1px solid #ccc;
+  background-color: blue;
+  color: white;
+}
+
+button {
+  color: black;
+  font-weight: bold;
+  background-color: blue;
+  padding: 5px;
+  box-shadow: none;
 }

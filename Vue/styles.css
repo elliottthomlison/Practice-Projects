@@ -25,6 +25,12 @@ label, input {
   font-size: 25px;
 }
 
+#goal {
+  margin: 1rem 0;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
 label {
   font-weight: bold;
   color: white;
@@ -42,9 +48,13 @@ li {
   border: 1px solid #ccc;
   background-color: blue;
   color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
 }
 
 button {
+  margin: 1rem 0;
+  padding: 1rem;
   color: white;
   font-weight: bold;
   background-color: blue;

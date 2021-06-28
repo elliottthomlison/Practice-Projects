@@ -4,6 +4,9 @@
 
 html {
   font-family: sans-serif;
+  background-image: url("background.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 body {

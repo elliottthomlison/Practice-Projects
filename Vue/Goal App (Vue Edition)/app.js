@@ -10,4 +10,4 @@ Vue.createApp({
       this.goals.push(this.enteredValue);
     }
   }
-})
+}).mount('app');

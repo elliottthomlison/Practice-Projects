@@ -2,15 +2,9 @@ const app = Vue.createApp({
   // data: function() {}
   data() {
     return {
-      courseGoal: ''
+      courseGoal: 'Finish the course and learn Vue!'
     };
   },
-  methods: {
-    addGoal() {
-      this.courseGoal.pus(this.enteredValue);
-      this.enteredValue = '';
-    }
-  }
 });
 
 app.mount('#user-goal');

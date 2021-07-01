@@ -4,6 +4,12 @@ const app = Vue.createApp({
     return {
       courseGoal: ''
     };
+  },
+  methods: {
+    addGoal() {
+      this.courseGoal.pus(this.enteredValue);
+      this.enteredValue = '';
+    }
   }
 });
 

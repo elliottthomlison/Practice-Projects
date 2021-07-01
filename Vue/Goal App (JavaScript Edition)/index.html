@@ -10,10 +10,11 @@
     <div id="app">
       <div>
         <label for="goal">My Goals</label>
-        <input type="text" id="goal" />
-        <button>Add Goal</button>
+        <input type="text" id="goal" v-modal="enteredValue"/>
+        <button v-on:click="addGoal">Add Goal</button>
       </div>
       <ul>
+        <li v-for="goal in goals">{{ goal }}</li>
       </ul>
     </div>
     <script src="app.js"></script>

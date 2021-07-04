@@ -4,6 +4,7 @@
 
 html {
   font-family: 'Jost', sans-serif;
+  background-color: rgb(32, 32, 32);
 }
 
 body {
@@ -16,11 +17,12 @@ section {
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
+  background-color: rgb(165, 165, 165);
 }
 
 h2 {
   font-size: 2rem;
-  border-bottom: 4px solid #ccc;
+  border-bottom: 4px solid rgb(63, 62, 62);
   color: #970076;
   margin: 0 0 1rem 0;
 }

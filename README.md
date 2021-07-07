@@ -5,3 +5,4 @@ This repository contains various projects, files, and demonstrations of TLC-rela
 ![Alt Text](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/Goal%20App%20(JavaScript%20Edition)/recording.gif?raw=true)
 
 ## Personal Questions App
+![Alt Text](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/Personal%20Questions%20App/projectImage.png?raw=true)

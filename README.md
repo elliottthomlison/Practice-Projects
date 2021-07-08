@@ -9,3 +9,6 @@ This repository contains various projects, files, and demonstrations of TLC-rela
 
 ## Reactivity App
 ![Gif of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/Reactivity%20App/recording.gif?raw=true)
+
+## Dynamic Styling App
+![Gif of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/Dynamic%20Styling%20App/recording.gif?raw=true)

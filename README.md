@@ -6,3 +6,6 @@ This repository contains various projects, files, and demonstrations of TLC-rela
 
 ## Personal Questions App
 ![Screenshot of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/Personal%20Questions%20App/projectImage.png?raw=true) 
+
+## Reactivity App
+![Gif of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/Reactivity%20App/recording.gif?raw=true)

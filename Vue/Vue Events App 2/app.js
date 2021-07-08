@@ -2,21 +2,21 @@ const app = Vue.createApp({
   data() {
     return {
       outputOne: "",
-      confirmedOutputOne: "",
+      confirmedOne: "",
       outputTwo: "",
     };
   },
   methods: {
     showAlert() {
-      alert('Alert!');
+      alert("Alert!");
     },
-    setOutputOne(event) {
-      this.outputOne = event.target.value 
+    setOutput(event) {
+      this.outputOne = event.target.value;
     },
-    confirmOutputOne() {
-      this.confirmedOutputOne = this.name;
+    confirmedOutput() {
+      this.confirmedOne = this.outputOne;
     },
-  }
-})
+  },
+});
 
 app.mount("#assignment");

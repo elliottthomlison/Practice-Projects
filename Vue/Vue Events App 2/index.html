@@ -24,12 +24,15 @@
       <!-- 2) Register the user input on "keydown" and output it in the paragraph (hint: event.target.value helps) -->
       <input 
         type="text" 
-        v-on:keydown.enter="confirmOne" 
+        v-on:keydown="confirmedOutput" 
       />
       <p>OUTPUT</p>
       <hr />
       <!-- 3) Repeat 2) but only output the entered value if the ENTER key was pressed -->
-      <input type="text" />
+      <input 
+        type="text" 
+        v-on:keydown.enter="confirmedOutput" 
+      />
       <p>OUTPUT</p>
     </section>
   </body>

@@ -12,6 +12,7 @@ export default {
       showBlock: false,
       timer: null,
       reactionTime: 0,
+      showResults: false
     };
   },
   mounted() {

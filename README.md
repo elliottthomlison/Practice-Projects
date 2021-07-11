@@ -12,3 +12,6 @@ This repository contains various projects, files, and demonstrations of TLC-rela
 
 ## Dynamic Styling App
 ![Gif of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/Dynamic%20Styling%20App/recording.gif?raw=true)
+
+## Class Styling App
+![Gif of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/Vue%20Styling%20App/recording.gif?raw=true)

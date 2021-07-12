@@ -6,7 +6,15 @@ const app = Vue.createApp({
       candy: "Mini Eggs",
       amount: 0,
     } 
-  }
+  },
+  methods: {
+    changeTitle() {
+      console.log('Test')
+        this.title = 'Words of Radiance'
+        this.candy = 'Booty de Vicky'
+        this.author = 'Shakespeare'
+    }
+  },
 })
 
 app.mount('#body')

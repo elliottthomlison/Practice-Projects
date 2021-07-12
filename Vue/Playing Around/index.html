@@ -15,9 +15,9 @@
   <body id="body">
     <h1>{{ title }}</h1>
     <h3>This page was written by {{ author }}.</h3>
-    <h4>He loves himself some tasty tasty {{ candy }}. He eats <button v-on:click="amount++">{{ amount }}</button> a day, but he should resist his craving so he puts <button v-on:click="amount--">one</button> egg back.</h4> 
-    <h1>If you want to change the title...</h1>
-    <h2 @click="title = 'Look At It Change'">here</h2>
-    <h2 @click="title = 'Look At It Change AGAIN'">or here</h2>
+    <h4>He loves himself some tasty tasty {{ candy }}. He eats <button v-on:click="amount++">{{ amount }}</button> a day, but he should resist his craving so he puts <button v-on:click="amount--">one</button> one back.</h4> 
+    <!-- <h1>If you want to change the title...</h1>
+    <h2 @click="title = 'Look At It Change'">here</h2> -->
+    <h2 @click="changeTitle">here</h2>
   </body>
 </html>

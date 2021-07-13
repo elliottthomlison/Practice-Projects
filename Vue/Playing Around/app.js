@@ -8,6 +8,7 @@ const app = Vue.createApp({
       changeTitle: true,
       x: 0,
       y: 0,
+      mouseLeaves: "Hello",
     }
   },
   methods: {
@@ -23,9 +24,22 @@ const app = Vue.createApp({
     handleEvent() {
       console.log('Test')
     },
+    mouseLeave() {
+      console.log('Test')
+      if (this.mouseLeaves === 'Hello') {
+        return this.mouseLeaves = 'Goodbye'
+      } else {
+        return this.mouseLeaves = 'Hello'
+      }
+    },
     handleMouseMove(event) {
-      this.x = event.offsetX
-    }
+      this.x = event.offsetX;
+      this.y = event.offsetY;
+    },
+    //i want this to change the background color when the mouse moves over it
+    // handleMouseOver(event) { 
+    //   this.background = 
+    // }
   },
 })
 

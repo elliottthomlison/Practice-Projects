@@ -36,10 +36,6 @@ const app = Vue.createApp({
       this.x = event.offsetX;
       this.y = event.offsetY;
     },
-    //i want this to change the background color when the mouse moves over it
-    // handleMouseOver(event) { 
-    //   this.background = 
-    // }
   },
 })
 

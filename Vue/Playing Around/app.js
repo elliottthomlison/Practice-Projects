@@ -9,6 +9,7 @@ const app = Vue.createApp({
       x: 0,
       y: 0,
       mouseLeaves: "Hello",
+      test: 'test',
     }
   },
   methods: {
@@ -22,10 +23,9 @@ const app = Vue.createApp({
       this.changeTitle = !this.changeTitle;
     },
     handleEvent() {
-      console.log('Test')
+      this.test = 'Boom Double Clicked'
     },
     mouseLeave() {
-      console.log('Test')
       if (this.mouseLeaves === 'Hello') {
         return this.mouseLeaves = 'Goodbye'
       } else {

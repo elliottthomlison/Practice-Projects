@@ -6,6 +6,8 @@ const app = Vue.createApp({
       candy: "Mini Eggs",
       amount: 0,
       changeTitle: true,
+      x: 0,
+      y: 0,
     }
   },
   methods: {
@@ -20,6 +22,9 @@ const app = Vue.createApp({
     },
     handleEvent() {
       console.log('Test')
+    },
+    handleMouseMove(event) {
+      this.x = event.offsetX
     }
   },
 })

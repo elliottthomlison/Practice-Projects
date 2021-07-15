@@ -1,5 +1,5 @@
 <template>
-  <div class="block" v-if="showBlock">
+  <div class="block" v-if="showBlock" @click="stopTimer">
       Click Me
   </div>
 </template>
@@ -10,13 +10,16 @@ export default {
     data() {
         return {
             showBlock: false,
+            timer: null,
+            reactionTime: 0,
         }
     },
     mounted() {
         console.log('Mounted')
         setTimeout(() => {
             this.showBlock = true
-            console.log('After Amount:', this.delay)
+            this.startTimer()
+            // console.log('After Amount:', this.delay)
         }, this.delay)
     },
     // updated() {
@@ -25,6 +28,16 @@ export default {
     // unmounted() {
     //     console.log('Component Unmounted')
     // }
+    methods: {
+        startTimer() {
+            this.timer = setInterval(() => {
+                this.reactionTime += 10
+            }, 10)
+        },
+        stopTimer() {
+            clearInterval(this.timer)
+        },
+    }
 }
 </script>
 

@@ -1,28 +1,28 @@
 <template>
   <h1>Ninja Reaction Timer</h1>
   <button @click="start">Play</button>
-  <Block />
+  <Block v-if="isPlaying" />
 </template>
 
 <script>
-import Block from './components/Block.vue'
+import Block from "./components/Block.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: { Block },
   data() {
     return {
       isPlaying: false,
       delay: null,
-    }
+    };
   },
   methods: {
     start() {
-      this.delay = 1000 + Math.random() * 5000 
-      this.isPlaying = true
-      console.log('Amount:', this.delay)
-    }
-  }
-}
+      this.delay = 1000 + Math.random() * 5000;
+      this.isPlaying = true;
+      console.log("Amount:", this.delay);
+    },
+  },
+};
 </script>
 
 <style>

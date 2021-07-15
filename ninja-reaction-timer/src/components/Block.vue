@@ -6,7 +6,10 @@
 
 <script>
 export default {
-    props: ['delay']
+    props: ['delay'],
+    mounted() {
+        console.log('Mounted')
+    }
 }
 </script>
 

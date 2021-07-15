@@ -1,13 +1,27 @@
 <template>
   <h1>Ninja Reaction Timer</h1>
+  <button @click="start">Play</button>
+  <Block />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Block from './components/Block.vue'
 export default {
   name: 'App',
-  components: { }
+  components: { Block },
+  data() {
+    return {
+      isPlaying: false,
+      delay: null,
+    }
+  },
+  methods: {
+    start() {
+      this.delay = 1000 + Math.random() * 5000 
+      this.isPlaying = true
+      console.log('Amount:', this.delay)
+    }
+  }
 }
 </script>
 
@@ -17,7 +31,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #444;
+  color: rgb(68, 68, 68);
   margin-top: 60px;
 }
 </style>

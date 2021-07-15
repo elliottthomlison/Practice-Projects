@@ -19,7 +19,7 @@ export default {
     start() {
       this.delay = 1000 + Math.random() * 5000;
       this.isPlaying = true;
-      console.log("Amount:", this.delay);
+      console.log("Before Amount:", this.delay);
     },
   },
 };

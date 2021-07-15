@@ -19,12 +19,12 @@ export default {
             console.log('After Amount:', this.delay)
         }, this.delay)
     },
-    updated() {
-        console.log('Component Updated')
-    },
-    unmounted() {
-        console.log('Component Unmounted')
-    }
+    // updated() {
+    //     console.log('Component Updated')
+    // },
+    // unmounted() {
+    //     console.log('Component Unmounted')
+    // }
 }
 </script>
 

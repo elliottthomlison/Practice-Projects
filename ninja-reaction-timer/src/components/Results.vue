@@ -4,10 +4,8 @@
 
 <script>
 export default {
-    props: ['score']
-}
+  props: ["score"],
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

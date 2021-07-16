@@ -6,32 +6,32 @@
 </template>
 
 <script>
-import Block from './components/Block'
+import Block from "./components/Block";
 export default {
-  name: 'App',
-  components: { Block },
+  name: "App",
+  components: { Block, Results },
   data() {
     return {
       isPlaying: false,
       delay: null,
       score: null,
-      showResults: false
-    }
+      showResults: false,
+    };
   },
   methods: {
     start() {
       // set time amount (ms)
-      this.delay = 2000 + Math.random() * 5000
-      this.isPlaying = true
-      this.showResults = false
+      this.delay = 2000 + Math.random() * 5000;
+      this.isPlaying = true;
+      this.showResults = false;
     },
     endGame(reactionTime) {
       this.score = reactionTime;
       this.isPlaying = false;
       this.showResults = true;
     },
-  }
-}
+  },
+};
 </script>
 
 <style>

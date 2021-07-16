@@ -15,3 +15,6 @@ This repository contains various projects, files, and demonstrations of TLC-rela
 
 ## Class Styling App
 ![Gif of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/Vue%20Styling%20App/recording.gif?raw=true)
+
+## Ninja Reaction Timer App
+![Gif of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/ninja-reaction-timer/src/assets/recording.gif?raw=true)

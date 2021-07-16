@@ -12,23 +12,15 @@ export default {
       showBlock: false,
       timer: null,
       reactionTime: 0,
-      showResults: false
+      showResults: false,
     };
   },
   mounted() {
-    console.log("Mounted");
     setTimeout(() => {
       this.showBlock = true;
       this.startTimer();
-      // console.log('After Amount:', this.delay)
     }, this.delay);
   },
-  // updated() {
-  //     console.log('Component Updated')
-  // },
-  // unmounted() {
-  //     console.log('Component Unmounted')
-  // }
   methods: {
     startTimer() {
       this.timer = setInterval(() => {
@@ -37,8 +29,7 @@ export default {
     },
     stopTimer() {
       clearInterval(this.timer);
-      // console.log(this.reactionTime)
-      this.$emit("finish", this.reactionTime);
+      this.$emit("end", this.reactionTime);
     },
   },
 };

@@ -1,10 +1,25 @@
 <template>
   <p>Reaction Time - {{ score }} ms</p>
+  <p class="rank">{{ rank }}</p>
 </template>
 
 <script>
 export default {
   props: ["score"],
+  data() {
+      return {
+          rank: null
+      }
+  },
+  mounted() {
+      if (this.score < 300) {
+          this.rank = 'Inhuman Reflexes'
+      } else if (this.score < 600 ) {
+          this.rank = "Quickish Reflexes"
+      } else {
+          this.rank = "Are You Even Trying Reflexes"
+      }
+  }
 };
 </script>
 

@@ -59,8 +59,13 @@ export default {
     },
     methods: {
         addSkill(event) {
-            if (event.key === ',' && this.tempSkill) {
-                this.skills.push(this.tempSkill)
+            if (event.key === 'Enter' && this.tempSkill) {
+                if (!this.skills.includes(this.tempSkill)) {
+                    //this is checking if the skills array already *includes* the temp skill, which if it does will return true
+                    //we want it to react only when it returns 'false' which when it does, we will add the 'new skill' to the array
+                   this.skills.push(this.tempSkill)
+                   this.tempSkill === ''    
+                }
                 this.tempSkill === ''
             }
         }

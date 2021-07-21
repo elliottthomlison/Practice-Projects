@@ -16,6 +16,10 @@
             <input type="text" name="title"></input>
             <label>Ingredients:</label>
             <input type="text" name="ingredients"></input>
+
+            <div class="center">
+                <input type="submit" name="submit" value="submit" class="btn brand z-depth-0">
+            </div>
         </form>
     </section>
 

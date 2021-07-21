@@ -15,7 +15,10 @@
         if(empty($_POST['email'])){
             echo 'Please fill in the required email field <br />';
         } else {
-            echo htmlspecialchars($_POST['email']);
+            $email = $_POST['email'];
+            if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                
+            }
         }
 
         //check title
@@ -31,7 +34,8 @@
         } else {
             echo htmlspecialchars($_POST['ingredients']);
         }
-     }
+
+     } // end of POST check
 		
 ?>
 

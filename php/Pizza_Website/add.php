@@ -16,8 +16,8 @@
             echo 'Please fill in the required email field <br />';
         } else {
             $email = $_POST['email'];
-            if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                
+            if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                echo 'Email must be a valid email address';
             }
         }
 
@@ -25,7 +25,10 @@
         if(empty($_POST['title'])){
             echo 'Please fill in the required title field <br />';
         } else {
-            echo htmlspecialchars($_POST['title']);
+            $title = $_POST['title'];
+            if(!preg_match('/^[a-zA-z\s]+$/', $title)){
+                echo 'Title must be letters and spaces only';
+            }
         }
 
         //check ingredients

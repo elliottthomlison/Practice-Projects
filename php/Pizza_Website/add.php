@@ -6,6 +6,8 @@
     //    echo $_GET['ingredients']; 
     // }
 
+    $errors = array('email'=>'', 'title'=>'', 'ingredients'=>'');
+
     if(isset($_POST['submit'])){
         // echo $_POST['email'];
         // echo $_POST['title'];
@@ -17,7 +19,7 @@
         } else {
             $email = $_POST['email'];
             if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                echo 'Email must be a valid email address';
+                $errors['email'] = 'Email must be a valid email address';
             }
         }
 
@@ -27,7 +29,7 @@
         } else {
             $title = $_POST['title'];
             if(!preg_match('/^[a-zA-z\s]+$/', $title)){
-                echo 'Title must be letters and spaces only';
+                $errors['title'] = 'Title must be letters and spaces only';
             }
         }
 
@@ -37,7 +39,7 @@
         } else {
             $ingredients = $_POST['ingredients'];
             if(!preg_match('/^([a-zA-z\s]+)(,\s*[a-zA-z\s]*)*$/',$ingredients)){
-                echo 'Ingredients must be a comma separated list';
+                $errors['ingredients'] = 'Ingredients must be a comma separated list';
             }
         }
 

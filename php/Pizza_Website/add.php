@@ -35,7 +35,10 @@
         if(empty($_POST['ingredients'])){
             echo 'Please fill in the required ingredients field <br />';
         } else {
-            echo htmlspecialchars($_POST['ingredients']);
+            $ingredients = $_POST['ingredients'];
+            if(!preg_match('/^([a-zA-z\s]+)(,\s*[a-zA-z\s]*)*$/',$ingredients)){
+                echo 'Ingredients must be a comma separated list';
+            }
         }
 
      } // end of POST check

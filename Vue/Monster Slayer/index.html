@@ -25,8 +25,8 @@
       </section>
       <section id="player" class="container">
         <h2>Your Health</h2>
-        <div class="healthbar" :style="playerBarStyles">
-          <div class="healthbar__value"></div>
+        <div class="healthbar">
+          <div class="healthbar__value" :style="playerBarStyles"></div>
         </div>
       </section>
       <section class="container" v-if="winner">

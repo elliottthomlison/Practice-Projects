@@ -31,13 +31,15 @@
       </section>
       <section class="container" v-if="winner">
         <!-- only show this message if the game actually ends -->
-        <h2>Game Over!</h2> 
+        <h2>Game Over!</h2>
         <!-- show the results at the same time -->
         <h3 v-if="winner === 'player'">You win!</h3>
-        <h3 v-if="winner === 'monster'">You lose!</h3>
-        <h3 v-if="winner === 'draw'">You tie!</h3>
+        <h3 v-else-if="winner === 'monster'">You lose!</h3>
+        <h3 v-else>You tie!</h3>
+        <button @click="startGame">Start New Game</button>
       </section>
-      <section id="controls">
+      <!-- alternatively, you can use v-if="!winner" -->
+      <section id="controls" v-else >
         <button @click="attackMonster">ATTACK</button>
         <button
           v-bind:disabled="useSpecialAttack"
@@ -46,7 +48,7 @@
           SPECIAL ATTACK
         </button>
         <button v-bind:disabled="healthCheck" @click="healPlayer">HEAL</button>
-        <button>SURRENDER</button>
+        <button @click="surrender">SURRENDER</button>
       </section>
       <section id="log" class="container">
         <h2>Battle Log</h2>

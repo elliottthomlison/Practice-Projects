@@ -18,3 +18,6 @@ This repository contains various projects, files, and demonstrations of TLC-rela
 
 ## Ninja Reaction Timer App
 ![Gif of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/ninja-reaction-timer/src/assets/recording.gif?raw=true)
+
+## Monster Slayer
+![Gif of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/Monster%20Slayer/recording.gif?raw=true)

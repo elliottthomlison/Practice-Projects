@@ -39,7 +39,7 @@
         <button @click="startGame">Start New Game</button>
       </section>
       <!-- alternatively, you can use v-if="!winner" -->
-      <section id="controls" v-else >
+      <section id="controls" v-else>
         <button @click="attackMonster">ATTACK</button>
         <button
           v-bind:disabled="useSpecialAttack"
@@ -54,7 +54,22 @@
         <h2>Battle Log</h2>
         <ul>
           <li v-for="logMessage in logMessages">
-            {{ logMessage.actionBy }} - {{ logMessage.actionType }} - {{ logMessage.actionValue }}
+            <!-- {{ logMessage.actionBy }} - {{ logMessage.actionType }} - {{ logMessage.actionValue }} -->
+            <span
+              :class="{'log--player': logMessage.actionBy === 'player',
+            'log--monster': logMessage.actionBy === 'monster'}"
+              >{{ logMessage.actionBy === 'player' ? 'Player' : 'Monster' }}
+            </span>
+            <span v-if="logMessage.actionType === 'heal'"
+              >Player heals himself for
+              <span class="log--heal"
+                >{{ logMessage.actionValue }}</span
+              ></span
+            >
+            <span v-else>
+              attacks and deals 
+              <span class="log--damage">{{ logMessage.actionValue }}</span>
+            </span>
           </li>
         </ul>
       </section>

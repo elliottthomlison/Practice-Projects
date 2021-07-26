@@ -130,3 +130,34 @@
 /* h1 {
     font-family: sans-serif;
 } */
+
+.modal {
+  position: fixed;
+  display: none; 
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center; 
+}
+
+.modal__action--positive {
+  text-decoration:  none;
+  background-color: green;
+}
+
+.modal__action--negative {
+  background-color: red;
+}

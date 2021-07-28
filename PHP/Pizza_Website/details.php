@@ -36,6 +36,12 @@
 			<p><?php echo date($pizza['created_at']); ?></p>
 			<h5>Ingredients:</h5>
 			<p><?php echo $pizza['ingredients']; ?></p>
+
+            <form>
+                <input type="hidden" name="id_to_delete" value="<?php echo $pizza['id'] ?>">
+                <input type="submit" name="delete" value="Delete" class="btn brand z-dept-0">
+
+            </form>
 		<?php else: ?>
 			<h5>No such pizza exists.</h5>
 		<?php endif ?>

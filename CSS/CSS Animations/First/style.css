@@ -1,0 +1,82 @@
+body {
+    background-color: gainsboro;
+}
+
+/* text inside the pictures */
+.innerText {
+    margin: auto;
+    width: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: cursive
+}
+
+/* box in the top left */
+.box {
+    height: 300px;
+    width: 25%;
+    margin: 50px;
+    background-image: url("1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid #fff;
+    transition: transform 1s ease-out;
+    max-width: 300px;
+    min-width: 300px;
+    display: inline-block;
+}
+.box:hover {
+    transform: rotate(180deg);
+}
+
+.box2 {
+    height: 300px;
+    width: 25%;
+    margin: 50px;
+    background-image: url("2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid #fff;
+    transition: transform 1s ease-out;
+    max-width: 300px;
+    min-width: 300px;
+    display: inline-block;
+}
+.box2:hover {
+    transform: scale(2);
+}
+
+.box3 {
+    height: 300px;
+    width: 25%;
+    margin: 50px;
+    background-image: url("3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid #fff;
+    transition: transform 1s ease-out;
+    max-width: 300px;
+    min-width: 300px;
+    display: inline-block;
+}
+.box3:hover {
+    transform: translate(70px);
+}
+
+.box4 {
+    height: 300px;
+    width: 25%;
+    margin: 50px;
+    background-image: url("4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid #fff;
+    transition: transform 1s ease-out;
+    max-width: 300px;
+    min-width: 300px;
+    display: inline-block;
+}
+.box4:hover {
+    transform: skew(40deg);
+}

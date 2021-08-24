@@ -18,6 +18,17 @@ player_choice = input()
 # print(type(player_choice))
 
 if player_choice == '1':
-    print('Attack')
+    print('Player Attacks')
+    monster['health'] = monster['health'] - player['attack']
+    print("Monster's Health:")
+    print(monster['health'])
+    
+    print('Monster Attacks')
+    player['health'] = player['health'] - monster['attack']
+    print("Player's Health:")
+    print(player['health'])
+
 elif player_choice == '2':
     print('Heal')
+    player['health'] = player['health'] + player['heal']
+    print(player['health'])

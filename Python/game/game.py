@@ -14,4 +14,10 @@ print('Please select action')
 print('1) Attack')
 print('2) Heal')
 
-input()
+player_choice = input()
+# print(type(player_choice))
+
+if player_choice == '1':
+    print('Attack')
+elif player_choice == '2':
+    print('Heal')

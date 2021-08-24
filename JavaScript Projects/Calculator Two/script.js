@@ -9,3 +9,7 @@ function calculate() {
   const answer = eval(value)
   document.getElementById('textarea').value = answer
 }
+
+function clr() {
+  document.getElementById('textarea').value = ''
+}

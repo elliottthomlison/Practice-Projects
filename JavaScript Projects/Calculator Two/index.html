@@ -8,43 +8,48 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="calculator">
-        <div class="input" id="input"></div>
-        <div class="buttons">
-          <div class="operators">
-            <div>+</div>
-            <div>-</div>
-            <div>&times;</div>
-            <div>&divide;</div>
-          </div>
-          <div class="leftPanel">
-            <div class="numbers">
-              <div>7</div>
-              <div>8</div>
-              <div>9</div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h1>JavaScript Calculator</h1>
+                <table class="table">
+                    <tr>
+                        <td colspan="3"><input type="text" id="textarea"></td>
+                        <td><input type="button" value="c" onclick="clr()"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="1" onclick="display('1')"></td>
+                        <td><input type="button" value="2" onclick="display('2')"></td>
+                        <td><input type="button" value="3" onclick="display('3')"></td>
+                        <td><input type="button" value="/" onclick="display('/')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="4" onclick="display('4')"></td>
+                        <td><input type="button" value="5" onclick="display('5')"></td>
+                        <td><input type="button" value="6" onclick="display('6')"></td>
+                        <td><input type="button" value="-" onclick="display('-')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7" onclick="display('7')"></td>
+                        <td><input type="button" value="8" onclick="display('8')"></td>
+                        <td><input type="button" value="9" onclick="display('9')"></td>
+                        <td><input type="button" value="+" onclick="display('+')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="." onclick="display('.')"></td>
+                        <td><input type="button" value="0" onclick="display('0')"></td>
+                        <td><input type="button" value="=" onclick="display('=')"></td>
+                        <td><input type="button" value="*" onclick="display('*')"></td>
+                    </tr>
+                </table>
             </div>
-            <div class="numbers">
-              <div>4</div>
-              <div>5</div>
-              <div>6</div>
-            </div>
-            <div class="numbers">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
-            </div>
-            <div class="numbers">
-              <div>0</div>
-              <div>.</div>
-              <div id="clear">C</div>
-            </div>
-          </div>
-          <div class="equal" id="result">=</div>
         </div>
-      </div>
+    </div>
 </body>
 
 </html>

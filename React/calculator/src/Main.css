@@ -1,17 +1,17 @@
-input[type=button] {
+.col-md-5 {
+    margin-top: 10%;
+}
+
+input {
+    width: 75%;
+}
+
+button {
     width: 100%;
-    background: lightgray;
-    font-size: 15px;
+    background: lightslategray;
     font-weight: bold;
 }
 
-input[type=text] {
-    width: 100%;
-    background: white;
-}
-
-.col-md-6 {
-    border: 5px black solid;
-    margin-top: 200px;
-    background: lightblue;
+h1 {
+    text-align: center;
 }

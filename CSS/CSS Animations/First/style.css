@@ -1,82 +1,386 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background-color: gainsboro;
+  background-color: black;
 }
 
 /* text inside the pictures */
 .innerText {
-    margin: auto;
-    width: 50%;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 2rem;
-    font-family: cursive
+  margin: auto;
+  width: 25%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: cursive;
 }
 
 /* box in the top left */
 .box {
-    height: 300px;
-    width: 25%;
-    margin: 50px;
-    background-image: url("1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 5px solid #fff;
-    transition: transform 1s ease-out;
-    max-width: 300px;
-    min-width: 300px;
-    display: inline-block;
+  display: inline-block;
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("beatles.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
 }
 .box:hover {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .box2 {
-    height: 300px;
-    width: 25%;
-    margin: 50px;
-    background-image: url("2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 5px solid #fff;
-    transition: transform 1s ease-out;
-    max-width: 300px;
-    min-width: 300px;
-    display: inline-block;
+  display: inline-block;
+  margin-left: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("banana.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
 }
 .box2:hover {
-    transform: scale(2);
+  transform: scale(2);
 }
 
 .box3 {
-    height: 300px;
-    width: 25%;
-    margin: 50px;
-    background-image: url("3.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 5px solid #fff;
-    transition: transform 1s ease-out;
-    max-width: 300px;
-    min-width: 300px;
-    display: inline-block;
+  display: inline-block;
+  margin-left: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("triangle.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
 }
 .box3:hover {
-    transform: translate(70px);
+  transform: translate(70px);
 }
 
 .box4 {
-    height: 300px;
-    width: 25%;
-    margin: 50px;
-    background-image: url("4.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 5px solid #fff;
-    transition: transform 1s ease-out;
-    max-width: 300px;
-    min-width: 300px;
-    display: inline-block;
+  display: inline-block;
+  margin-left: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("zeppelin.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
 }
 .box4:hover {
-    transform: skew(40deg);
+  transform: skew(40deg);
+}
+
+.box5 {
+  display: inline-block;
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-image: url("beatles2.jpeg");
+
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  animation-name: box5;
+  animation-duration: 3s;
+}
+
+@keyframes box5 {
+  0% {
+    background: yellow;
+  }
+  /* Adding a step in the middle */
+  25% {
+    background: rgb(43, 255, 0);
+  }
+  50% {
+    background: rgb(0, 204, 255);
+  }
+  100% {
+    background: rgb(0, 47, 255);
+  }
+}
+
+.box6 {
+  display: inline-block;
+  position: relative;
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("biggie.jpeg");
+  border: 5px solid #fff;
+  animation-name: box6;
+  animation-duration: 5s;
+}
+
+@keyframes box6 {
+  0% {
+    background-image: url("biggie.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-image: url("biggie2.jpg");
+      background-size: cover;
+  background-repeat: no-repeat;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-image: url("biggie3.jpg");
+      background-size: cover;
+  background-repeat: no-repeat;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-image: url("biggie4.jpg");
+      background-size: cover;
+  background-repeat: no-repeat;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-image: url("biggie.jpeg");
+      background-size: cover;
+  background-repeat: no-repeat;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.box7 {
+  display: inline-block;
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background: yellow;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+}
+.box7:hover {
+  background-image: url("nevermind.jpg");
+}
+
+.box8 {
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("rumors.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
+  display: inline-block;
+}
+.box8:hover {
+  transform: skew(40deg);
+}
+
+.box9 {
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("nurse.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
+  display: inline-block;
+}
+.box9:hover {
+  transform: skew(40deg);
+}
+
+.box10 {
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("elvis.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
+  display: inline-block;
+}
+.box10:hover {
+  transform: skew(40deg);
+}
+
+.box11 {
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("guitar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
+  display: inline-block;
+}
+.box11:hover {
+  transform: skew(40deg);
+}
+
+.box12 {
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("flash.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
+  display: inline-block;
+}
+.box12:hover {
+  transform: skew(40deg);
+}
+
+.box13 {
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("rain.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
+  display: inline-block;
+}
+.box13:hover {
+  transform: skew(40deg);
+}
+
+.box14 {
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("moutains.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
+  display: inline-block;
+}
+.box14:hover {
+  transform: skew(40deg);
+}
+
+.box15 {
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("jeans.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
+  display: inline-block;
+}
+.box15:hover {
+  transform: skew(40deg);
+}
+
+.box16 {
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("war.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
+  display: inline-block;
+}
+.box16:hover {
+  transform: skew(40deg);
+}
+
+.box17 {
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("drum.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
+  display: inline-block;
+}
+.box17:hover {
+  transform: skew(40deg);
+}
+
+.box18 {
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("zipper.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
+  display: inline-block;
+}
+.box18:hover {
+  transform: skew(40deg);
+}
+
+.box19 {
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("fire.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
+  display: inline-block;
+}
+.box19:hover {
+  transform: skew(40deg);
+}
+
+.box20 {
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("monk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transition: transform 1s ease-out;
+  display: inline-block;
+}
+.box20:hover {
+  transform: skew(40deg);
 }

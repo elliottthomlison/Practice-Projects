@@ -134,29 +134,29 @@ body {
   }
   25% {
     background-image: url("biggie2.jpg");
-      background-size: cover;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     left: 200px;
     top: 0px;
   }
   50% {
     background-image: url("biggie3.jpg");
-      background-size: cover;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     left: 200px;
     top: 200px;
   }
   75% {
     background-image: url("biggie4.jpg");
-      background-size: cover;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     left: 0px;
     top: 200px;
   }
   100% {
     background-image: url("biggie.jpeg");
-      background-size: cover;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     left: 0px;
     top: 0px;
   }
@@ -178,6 +178,7 @@ body {
 }
 
 .box8 {
+  display: inline-block;
   margin-left: 140.8px;
   margin-top: 140.8px;
   height: 300px;
@@ -186,30 +187,69 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid #fff;
-  transition: transform 1s ease-out;
-  display: inline-block;
-}
-.box8:hover {
-  transform: skew(40deg);
+  position: relative;
+  animation-name: box8;
+  animation-duration: 4s;
+  animation-delay: s;
 }
 
-.box9 {
+@keyframes box8 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.hvr-grow {
+  display: inline-block;
   margin-left: 140.8px;
   margin-top: 140.8px;
   height: 300px;
   width: 300px;
   background-image: url("nurse.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 5px solid #fff;
-  transition: transform 1s ease-out;
-  display: inline-block;
+  transform: perspective(20px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.box9:hover {
-  transform: skew(40deg);
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  animation-name: hvr-grow;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes hvr-grow {
+  25% {
+    transform: scale(2);
+  }
+  75% {
+    transform: scale(0.5);
+  }
 }
 
 .box10 {
+  display: inline-block;
   margin-left: 140.8px;
   margin-top: 140.8px;
   height: 300px;
@@ -218,30 +258,20 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid #fff;
-  transition: transform 1s ease-out;
-  display: inline-block;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
 }
-.box10:hover {
-  transform: skew(40deg);
+
+.box10:hover,
+.box10:focus,
+.box10:active {
+  transform: translateY(150px);
 }
 
 .box11 {
-  margin-left: 140.8px;
-  margin-top: 140.8px;
-  height: 300px;
-  width: 300px;
-  background-image: url("guitar.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 5px solid #fff;
-  transition: transform 1s ease-out;
   display: inline-block;
-}
-.box11:hover {
-  transform: skew(40deg);
-}
-
-.box12 {
   margin-left: 140.8px;
   margin-top: 140.8px;
   height: 300px;
@@ -250,14 +280,92 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid #fff;
-  transition: transform 1s ease-out;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.box11:hover {
+  transform: skew(20deg);
+}
+
+@keyframes box11 {
+  16.65% {
+    transform: translateY(20px);
+  }
+  33.3% {
+    transform: translateY(-16px);
+  }
+  49.95% {
+    transform: translateY(14px);
+  }
+  66.6% {
+    transform: translateY(-12px);
+  }
+  83.25% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.box11:hover,
+.box11:focus,
+.box11:active {
+  animation-name: box11;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+}
+
+.box12 {
   display: inline-block;
+  margin-left: 140.8px;
+  margin-top: 140.8px;
+  height: 300px;
+  width: 300px;
+  background-image: url("guitar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 .box12:hover {
-  transform: skew(40deg);
+  transform: skew(-20deg);
+}
+
+.box12:hover,
+.box12:focus,
+.box12:active {
+  animation-name: box12;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes box12 {
+  16.65% {
+    transform: translateX(8px);
+  }
+  33.3% {
+    transform: translateX(-6px);
+  }
+  49.95% {
+    transform: translateX(4px);
+  }
+  66.6% {
+    transform: translateX(-2px);
+  }
+  83.25% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .box13 {
+  display: inline-block;
   margin-left: 140.8px;
   margin-top: 140.8px;
   height: 300px;
@@ -266,14 +374,53 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid #fff;
-  transition: transform 1s ease-out;
-  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.box13:hover {
-  transform: skew(40deg);
+.box13:hover,
+.box13:focus,
+.box13:active {
+  animation-name: box13;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes box13 {
+  10% {
+    transform: translateX(5px) rotate(4deg);
+  }
+  20% {
+    transform: translateX(-5px) rotate(-4deg);
+  }
+  30% {
+    transform: translateX(4px) rotate(3deg);
+  }
+  40% {
+    transform: translateX(-4px) rotate(-3deg);
+  }
+  50% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  60% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  70% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    transform: translateX(0px) rotate(0);
+  }
 }
 
 .box14 {
+  display: inline-block;
   margin-left: 140.8px;
   margin-top: 140.8px;
   height: 300px;
@@ -282,11 +429,15 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid #fff;
-  transition: transform 1s ease-out;
-  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
-.box14:hover {
-  transform: skew(40deg);
+.box14:hover,
+.box14:focus,
+.box14:active {
+  transform: translateX(-100px);
 }
 
 .box15 {
@@ -298,11 +449,37 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid #fff;
-  transition: transform 1s ease-out;
   display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
 }
-.box15:hover {
-  transform: skew(40deg);
+.box15:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.box15:hover,
+.box15:focus,
+.box15:active {
+  color: white;
+}
+.box15:hover:before,
+.box15:focus:before,
+.box15:active:before {
+  transform: scaleX(1);
 }
 
 .box16 {
@@ -314,11 +491,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid #fff;
-  transition: transform 1s ease-out;
   display: inline-block;
 }
 .box16:hover {
-  transform: skew(40deg);
+  transform: scale(1.5);
 }
 
 .box17 {
@@ -330,11 +506,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid #fff;
-  transition: transform 1s ease-out;
+  /* transition: transform 1s ease-out; */
   display: inline-block;
 }
 .box17:hover {
-  transform: skew(40deg);
+  transform: scale(-.5);
 }
 
 .box18 {

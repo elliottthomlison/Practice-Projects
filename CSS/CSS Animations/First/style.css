@@ -514,6 +514,7 @@ body {
 }
 
 .box18 {
+  display: inline-block;
   margin-left: 140.8px;
   margin-top: 140.8px;
   height: 300px;
@@ -522,14 +523,37 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid #fff;
-  transition: transform 1s ease-out;
-  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  transition-property: color;
+  transition-duration: 0.3s;
 }
-.box18:hover {
-  transform: skew(40deg);
+.box18:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  border-radius: 100%;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.box18:hover, .box18:focus, .box18:active {
+  background-image: url("zipper.jpeg");
+}
+.box18:hover:before, .box18:focus:before, .box18:active:before {
+  transform: scale(2);
 }
 
-.box19 {
+.box19 {  
+  display: inline-block;
   margin-left: 140.8px;
   margin-top: 140.8px;
   height: 300px;
@@ -539,10 +563,31 @@ body {
   background-repeat: no-repeat;
   border: 5px solid #fff;
   transition: transform 1s ease-out;
-  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
 }
-.box19:hover {
-  transform: skew(40deg);
+.box19:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.box19:hover, .box19:focus, .box19:active {
+  color: white;
+}
+.box19:hover:before, .box19:focus:before, .box19:active:before {
+  transform: scale(1);
 }
 
 .box20 {

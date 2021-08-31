@@ -8,8 +8,29 @@
     <title>Form Validation</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-
 <body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5 text-center">
+                <h1>Form Validation</h1>
+                <input type="text" id="username" class="form-control" placeholder="username">
+                <small id="username_error"></small>
+                
+                <input type="text" id="email" class="form-control" placeholder="email">
+                <small id="email_error"></small>
+                
+                <input type="text" id="password" class="form-control" placeholder="password">
+                <small id="password_error"></small>
+                
+                <input type="text" id="confirm_password" class="form-control" placeholder="confirm_password">
+                <small id="confirm_password_error"></small>
+
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

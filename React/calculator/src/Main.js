@@ -19,9 +19,8 @@ function Main() {
     }
 
     return (
-        <div className="container">
-           
-                <h1>React Calculator</h1>
+            <div className="row justify-content-center">
+               <h1>React Calculator</h1>
                     <table className="table">
                         <tr>
                             <td colSpan="3"><input type="text" value={inputValue}/></td>

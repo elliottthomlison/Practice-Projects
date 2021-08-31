@@ -1,14 +1,18 @@
-.col-md-5 {
-    margin-top: 10%;
+.row {
+    width: 550px;
+    height: 400px;
+    margin-left: 35%;
+    margin-top: 5%;
+    border: 3px solid black;
+    padding: 15px;
 }
 
 input {
-    width: 75%;
+    width: 100%;
 }
 
 button {
     width: 100%;
-    background: lightslategray;
     font-weight: bold;
 }
 

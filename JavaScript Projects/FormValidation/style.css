@@ -1,0 +1,19 @@
+* {
+    text-align: left;
+}
+
+.col-md-6 {
+    background-color: aqua;
+    height: 450px;
+    margin-top: 250px;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+h1 {
+    padding-bottom: 25px;
+}
+
+.btn {
+    margin-top: 25px;
+}

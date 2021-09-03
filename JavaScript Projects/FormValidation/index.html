@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+        <link rel="stylesheet" href="style.css" />
+
+    </head>
 <body>
     <div class="container">
         <div class="row justify-content-center">
@@ -26,11 +26,13 @@
                 <small id="password_error"></small>
                 
                 <input type="text" id="confirm_password" class="form-control" placeholder="confirm password">
-                <small id="confirm_password_error"></small>
-
-                <button class="btn btn-primary">Submit</button>
+                <small id="confirmPassword_error"></small>
+                <br />
+                <button class="btn btn-primary" onclick="validate()">Submit</button>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<script src="script.js"></script>

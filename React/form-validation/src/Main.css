@@ -1,0 +1,24 @@
+body {
+    background-color: lightpink;
+}
+
+.col-md-6 {
+    border: 2px solid black;
+    margin-top: 150px;
+    background-color: white;
+    padding: 15px;
+}
+
+.form-control {
+    margin-top: 5px;
+}
+
+small {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 25px;
+}

@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue !important;
+}
+
+.col-md-5 {
+    margin-top: 150px;
+    background-color: white;
+    padding: 15px 0px 100px 0px;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 75%;
+}

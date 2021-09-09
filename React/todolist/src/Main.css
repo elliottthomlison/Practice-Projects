@@ -1,0 +1,16 @@
+body {
+    background-color: aquamarine;
+}
+
+.col-md-5 {
+    margin-top: 150px;
+    border: 5px solid black;
+    padding: 25px;
+    background-color: white;
+}
+
+#taskName {
+    width: 90%;
+    display: inline;
+    margin-right: 20px;
+}

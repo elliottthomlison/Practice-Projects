@@ -16,3 +16,15 @@ h1 {
 input {
     width: 75%;
 }
+
+li {
+    list-style-type: none;
+    display: inline;
+    justify-content: flex-end;
+}
+
+i {
+    color: red;
+    margin-left: 25px;
+    cursor: pointer;
+}

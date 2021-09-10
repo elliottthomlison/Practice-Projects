@@ -12,5 +12,13 @@ body {
 #taskName {
     width: 90%;
     display: inline;
-    margin-right: 20px;
+    margin-right: 15px;
+}
+
+#taskListContentItems {
+    display: inline;
+}
+
+button {
+    display: inline;
 }

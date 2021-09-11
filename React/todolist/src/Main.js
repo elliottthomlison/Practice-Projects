@@ -12,9 +12,9 @@ function Main() {
     
     const taskListContent = taskList.map((task) => {
         return (
-            <div>
+            <div id="taskListContentItems">
                 <p>{task}</p>
-                <button>Delete</button>
+                <i class="far fa-trash-alt"></i>
             </div>
         )
     })

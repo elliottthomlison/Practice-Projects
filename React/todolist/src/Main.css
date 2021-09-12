@@ -22,3 +22,18 @@ body {
 button {
     display: inline;
 }
+
+input {
+    display: inline !important;
+    margin-bottom: 20px;
+}
+
+i {
+    color: red;
+    cursor: pointer;
+}
+
+p {
+    display: inline;
+    margin: 20px;
+}

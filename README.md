@@ -17,7 +17,7 @@ This repository contains various projects, files, and demonstrations of TLC-rela
 ![Gif of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/Vue%20Styling%20App/recording.gif?raw=true)
 
 ## Ninja Reaction Timer App
-![Gif of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/ninja-reaction-timer/src/assets/recording.gif?raw=true)
+![Gif of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/Ninja%20Reaction%20Timer/src/assets/recording.gif)
 
 ## Monster Slayer
 ![Gif of Project](https://github.com/elliottthomlison/TLC-Preparation/blob/master/Vue/Monster%20Slayer/recording.gif?raw=true)

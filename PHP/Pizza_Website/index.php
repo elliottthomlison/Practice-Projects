@@ -1,9 +1,9 @@
 <?php 
 
-	include('config/db_connect.php');
+	include("config/db_connect.php");
 
 	// write query for all pizzas
-	$sql = 'SELECT title, ingredients, id FROM pizzas ORDER BY created_at';
+	$sql = "SELECT title, ingredients, id FROM pizzas ORDER BY created_at";
 
 	// get the result set (set of rows)
 	$result = mysqli_query($conn, $sql);
@@ -23,7 +23,7 @@
 <!DOCTYPE html>
 <html>
 	
-	<?php include('templates/header.php'); ?>
+	<?php include("templates/header.php"); ?>
 
 	<h4 class="center grey-text">Pizzas!</h4>
 
@@ -35,15 +35,15 @@
 				<div class="col s6 m4">
 					<div class="card z-depth-0">
 						<div class="card-content center">
-							<h6><?php echo htmlspecialchars($pizza['title']); ?></h6>
+							<h6><?php echo htmlspecialchars($pizza["title"]); ?></h6>
 							<ul class="grey-text">
-								<?php foreach(explode(',', $pizza['ingredients']) as $ing): ?>
+								<?php foreach(explode(",", $pizza["ingredients"]) as $ing): ?>
 									<li><?php echo htmlspecialchars($ing); ?></li>
 								<?php endforeach; ?>
 							</ul>
 						</div>
 						<div class="card-action right-align">
-							<a class="brand-text" href="details.php?id=<?php echo $pizza['id'] ?>">more info</a>
+							<a class="brand-text" href="details.php?id=<?php echo $pizza["id"] ?>">more info</a>
 						</div>
 					</div>
 				</div>
@@ -53,6 +53,6 @@
 		</div>
 	</div>
 
-	<?php include('templates/footer.php'); ?>
+	<?php include("templates/footer.php"); ?>
 
 </html>

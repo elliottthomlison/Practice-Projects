@@ -1,12 +1,12 @@
 <?php 
 
-	include('config/db_connect.php');
+	include("config/db_connect.php");
 
 	// check GET request id param
-	if(isset($_GET['id'])){
+	if(isset($_GET["id"])){
 		
 		// escape sql chars
-		$id = mysqli_real_escape_string($conn, $_GET['id']);
+		$id = mysqli_real_escape_string($conn, $_GET["id"]);
 
 		// make sql
 		$sql = "SELECT * FROM pizzas WHERE id = $id";
@@ -27,18 +27,18 @@
 <!DOCTYPE html>
 <html>
 
-	<?php include('templates/header.php'); ?>
+	<?php include("templates/header.php"); ?>
 
 	<div class="container center">
 		<?php if($pizza): ?>
-			<h4><?php echo $pizza['title']; ?></h4>
-			<p>Created by <?php echo $pizza['email']; ?></p>
-			<p><?php echo date($pizza['created_at']); ?></p>
+			<h4><?php echo $pizza["title"]; ?></h4>
+			<p>Created by <?php echo $pizza["email"]; ?></p>
+			<p><?php echo date($pizza["created_at"]); ?></p>
 			<h5>Ingredients:</h5>
-			<p><?php echo $pizza['ingredients']; ?></p>
+			<p><?php echo $pizza["ingredients"]; ?></p>
 
             <form>
-                <input type="hidden" name="id_to_delete" value="<?php echo $pizza['id'] ?>">
+                <input type="hidden" name="id_to_delete" value="<?php echo $pizza["id"] ?>">
                 <input type="submit" name="delete" value="Delete" class="btn brand z-dept-0">
             </form>
 		<?php else: ?>
@@ -46,6 +46,6 @@
 		<?php endif ?>
 	</div>
 
-	<?php include('templates/footer.php'); ?>
+	<?php include("templates/footer.php"); ?>
 
 </html>

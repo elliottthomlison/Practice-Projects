@@ -3,17 +3,17 @@
 	// multidimensional array
 
 	$blogs = [
-		['title' => 'mario party', 'author' => 'mario', 'content' => 'lorem'],
-		['title' => 'mariokart cheats', 'author' => 'toad', 'content' => 'lorem'],
-		['title' => 'zelda hidden chests', 'author' => 'link', 'content' => 'lorem']
+		["title" => "mario party", "author" => "mario", "content" => "lorem"],
+		["title" => "mariokart cheats", "author" => "toad", "content" => "lorem"],
+		["title" => "zelda hidden chests", "author" => "link", "content" => "lorem"]
 	];
 
 	print_r($blogs);
 	//print_r($blogs[2]);
-	//echo $blogs[1]['title'];
+	//echo $blogs[1]["title"];
 	//echo count($blogs);
 
-	// $blogs[] = ['title' => 'castle party', 'author' => 'peach', 'content' => 'lorem'];
+	// $blogs[] = ["title" => "castle party", "author" => "peach", "content" => "lorem"];
 	//print_r($blogs);
 
 	// $popped = array_pop($blogs);

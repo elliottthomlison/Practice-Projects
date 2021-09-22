@@ -2,10 +2,10 @@
 
 	// indexed arrays
 
-	$peopleOne = ['shaun', 'crystal', 'ryu'];
+	$peopleOne = ["shaun", "crystal", "ryu"];
 	//echo $peopleOne[1];
 
-	$peopleTwo = array('ken', 'chun-li');
+	$peopleTwo = array("ken", "chun-li");
 	//echo $peopleTwo[1];
 
 	$ages = [20, 30, 40, 50];
@@ -29,14 +29,14 @@
 
 	// associative array (key & value pairs)
 
-	$ninjasOne = ['shaun' => 'black', 'mario' => 'orange', 'luigi' => 'brown'];
-	//echo $ninjasOne['mario'];
+	$ninjasOne = ["shaun" => "black", "mario" => "orange", "luigi" => "brown"];
+	//echo $ninjasOne["mario"];
 	//print_r($ninjasOne);
 
-	$ninjasTwo = array('bowser' => 'green', 'peach' => 'yellow');
+	$ninjasTwo = array("bowser" => "green", "peach" => "yellow");
 	//print_r($ninjasTwo);
 
-	$ninjasTwo['toad'] = 'pink';
+	$ninjasTwo["toad"] = "pink";
 
 	//echo count($ninjasTwo);
 

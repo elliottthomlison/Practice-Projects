@@ -1,13 +1,13 @@
 <?php
 
-$stringOne = 'my email is ';
-$stringTwo = 'mario@pizza.com';
+$stringOne = "my email is ";
+$stringTwo = "mario@pizza.com";
 
 // echo $stringOne . $stringTwo;
 
-$name = 'Mario';
+$name = "Mario";
 
-// echo 'Hey, my name is ' . $name
+// echo "Hey, my name is " . $name
 // echo " // hey my name is $name";
 // echo " // the ninja scream \"whaaaaa\"";
 
@@ -16,7 +16,7 @@ $name = 'Mario';
 // echo strlen($name)
 // echo strtoupper($name)
 // echo strtolower($name)
-echo str_replace('M', 'W', $name);
+echo str_replace("M", "W", $name);
 
 ?>
 

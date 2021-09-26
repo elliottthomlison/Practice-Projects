@@ -1,5 +1,5 @@
-import React from 'react';
-import AddCity from './components/Cities/AddCity';
+import React from "react";
+import AddCity from "./components/Cities/AddCity";
 
 
 function App() {

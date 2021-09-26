@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import Button from '../Button/Button';
-import Card from '../UI/Card';
-import classes from './AddCity.module.css'
+import React, { useState } from "react";
+import Button from "../Button/Button";
+import Card from "../UI/Card";
+import classes from "./AddCity.module.css"
 
 const AddCity = (props) => {
-  const [enteredFromCity, setEnteredFromCity] = useState('')
-  const [enteredToCity, setEnteredToCity] = useState('')
+  const [enteredFromCity, setEnteredFromCity] = useState("")
+  const [enteredToCity, setEnteredToCity] = useState("")
 
   const addCityHandler = (event) => {
     event.preventDefault();
@@ -14,16 +14,16 @@ const AddCity = (props) => {
       return;
    } 
       console.log(enteredFromCity, enteredToCity)
-      setEnteredFromCity('');
-      setEnteredToCity('');
+      setEnteredFromCity("");
+      setEnteredToCity("");
   }
 
   const fromCityChangeHandler = (event) => {
-    setEnteredFromCity('');
+    setEnteredFromCity("");
   }
 
   const toCityChangeHandler = (event) => {
-    setEnteredToCity('');
+    setEnteredToCity("");
   }
 
   return (

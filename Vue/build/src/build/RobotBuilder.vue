@@ -48,12 +48,12 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
-import PartSelector from './PartSelector.vue';
-import CollapsibleSection from '../shared/CollapsibleSection.vue';
+import { mapState, mapActions } from "vuex";
+import PartSelector from "./PartSelector.vue";
+import CollapsibleSection from "../shared/CollapsibleSection.vue";
 
 export default {
-  name: 'RobotBuilder',
+  name: "RobotBuilder",
   created() {
     this.getParts();
   },
@@ -63,7 +63,7 @@ export default {
     } else {
       /* eslint no-alert: 0 */
       /* eslint no-restricted-globals: 0 */
-      const response = confirm('You have not added your robot to your cart. Are you sure you want to leave?',);
+      const response = confirm("You have not added your robot to your cart. Are you sure you want to leave?",);
       next(response);
     }
   },
@@ -81,13 +81,13 @@ export default {
     };
   },
   computed: {
-    ...mapState('robots', { availableParts: 'parts' }),
+    ...mapState("robots", { availableParts: "parts" }),
     saleBorderClass() {
-      return this.selectedRobot.head.onSale ? 'sale-border' : '';
+      return this.selectedRobot.head.onSale ? "sale-border" : "";
     },
   },
   methods: {
-    ...mapActions('robots', ['getParts', 'addRobotToCart']),
+    ...mapActions("robots", ["getParts", "addRobotToCart"]),
     addToCart() {
       const robot = this.selectedRobot;
       const cost =
@@ -98,7 +98,7 @@ export default {
         robot.base.cost;
 
       this.addRobotToCart(Object.assign({}, robot, { cost })).then(() =>
-        this.$router.push('/cart'),);
+        this.$router.push("/cart"),);
       this.addedToCart = true;
     },
   },

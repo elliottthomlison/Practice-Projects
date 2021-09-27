@@ -4,8 +4,8 @@ function getRandomValue(min, max) {
 
 const app = Vue.createApp({
   //pseudocode:
-  //take in the value of the player's attack and health
-  //take in the value of the demon's attack and health
+  //take in the value of the player"s attack and health
+  //take in the value of the demon"s attack and health
 
   data() {
     return {
@@ -32,7 +32,7 @@ const app = Vue.createApp({
       this.monsterHealth = this.monsterHealth - attackValue;
       this.attackPlayer();
       this.currentRound++;
-      this.addLogMessage('player', 'attack', attackValue);
+      this.addLogMessage("player", "attack", attackValue);
     },
     attackPlayer() {
       const attackValue = getRandomValue(10, 15);

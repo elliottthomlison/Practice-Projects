@@ -8,10 +8,10 @@ const app = Vue.createApp({
   },
   methods: {
     outputFullname() {
-      if (this.name === '') {
-        return '';
+      if (this.name === "") {
+        return "";
       }
-      return this.name + ' ' + 'Thomlison'
+      return this.name + " " + "Thomlison"
     },
     setName(event) {
       this.name = event.target.value;
@@ -31,16 +31,16 @@ const app = Vue.createApp({
       this.counter = this.counter - num;
     },
     resetInput() {
-      this.name = '';
+      this.name = "";
     }
   },
   computed: {
     fullname() {
-      console.log('Running again...');
-      if (this.name === '') {
-        return '';
+      console.log("Running again...");
+      if (this.name === "") {
+        return "";
       }
-      return this.name + ' ' + this.lastName;
+      return this.name + " " + this.lastName;
     },
   },
 });

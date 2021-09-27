@@ -33,8 +33,8 @@
         <!-- only show this message if the game actually ends -->
         <h2>Game Over!</h2>
         <!-- show the results at the same time -->
-        <h3 v-if="winner === 'player'">You win!</h3>
-        <h3 v-else-if="winner === 'monster'">You lose!</h3>
+        <h3 v-if="winner === "player"">You win!</h3>
+        <h3 v-else-if="winner === "monster"">You lose!</h3>
         <h3 v-else>You tie!</h3>
         <button @click="startGame">Start New Game</button>
       </section>
@@ -56,11 +56,11 @@
           <li v-for="logMessage in logMessages">
             <!-- {{ logMessage.actionBy }} - {{ logMessage.actionType }} - {{ logMessage.actionValue }} -->
             <span
-              :class="{'log--player': logMessage.actionBy === 'player',
-            'log--monster': logMessage.actionBy === 'monster'}"
-              >{{ logMessage.actionBy === 'player' ? 'Player' : 'Monster' }}
+              :class="{"log--player": logMessage.actionBy === "player",
+            "log--monster": logMessage.actionBy === "monster"}"
+              >{{ logMessage.actionBy === "player" ? "Player" : "Monster" }}
             </span>
-            <span v-if="logMessage.actionType === 'heal'"
+            <span v-if="logMessage.actionType === "heal""
               >Player heals himself for
               <span class="log--heal"
                 >{{ logMessage.actionValue }}</span

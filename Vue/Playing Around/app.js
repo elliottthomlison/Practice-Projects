@@ -42,7 +42,7 @@ const app = Vue.createApp({
       this.showBooks = !this.showBooks;
     },
     changeTitle1() {
-      // console.log('Test')
+      // console.log("Test")
       this.title = "Words of Radiance";
       this.candy = "Booty de Vicky";
       this.author = "Shakespeare";

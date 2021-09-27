@@ -13,7 +13,7 @@ export default {
   },
   mounted() {
       if (this.score < 500) {
-          this.rank = 'Inhuman Reflexes'
+          this.rank = "Inhuman Reflexes"
       } else if (this.score < 800 ) {
           this.rank = "Quickish Reflexes"
       } else {

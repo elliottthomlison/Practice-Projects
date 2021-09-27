@@ -1,4 +1,4 @@
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed, onMounted } from "vue";
 
 function filterResults(results, filters) {
   return results.value.filter((part) => filters.value.every(
@@ -16,7 +16,7 @@ export default function useFilters(searchResults) {
   const applyFilters = (filter) => filters.value.push(filter);
   const clearFilters = () => { filters.value = []; };
 
-  onMounted(() => console.log('Mounted: useFilters'));
+  onMounted(() => console.log("Mounted: useFilters"));
 
   const filteredResults = computed(() => filterResults(searchResults, filters));
 

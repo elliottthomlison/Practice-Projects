@@ -7,10 +7,10 @@
       />
     </div>
     <div class="filters">
-      <div><button @click="applyFilters({type:'heads'})">Filter for Heads</button></div>
-      <div><button @click="applyFilters({type:'arms'})">Filter for Arms</button></div>
-      <div><button @click="applyFilters({type:'torsos'})">Filter for Torsos</button></div>
-      <div><button @click="applyFilters({type:'bases'})">Filter for Bases</button></div>
+      <div><button @click="applyFilters({type:"heads"})">Filter for Heads</button></div>
+      <div><button @click="applyFilters({type:"arms"})">Filter for Arms</button></div>
+      <div><button @click="applyFilters({type:"torsos"})">Filter for Torsos</button></div>
+      <div><button @click="applyFilters({type:"bases"})">Filter for Bases</button></div>
       <div><button @click="clearFilters()">Clear Filters</button></div>
       <div>Filters: {{filters}}</div>
     </div>
@@ -35,10 +35,10 @@
 </template>
 
 <script>
-import { computed } from 'vue';
-import useSearch from './useSearch';
-import useFilters from './useFilters';
-import usePagination from './usePagination';
+import { computed } from "vue";
+import useSearch from "./useSearch";
+import useFilters from "./useFilters";
+import usePagination from "./usePagination";
 
 export default {
   setup(props) {

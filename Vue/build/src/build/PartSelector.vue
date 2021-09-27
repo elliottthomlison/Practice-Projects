@@ -4,7 +4,7 @@
     <button @click="selectPreviousPart()" class="prev-selector"></button>
     <button @click="selectNextPart()" class="next-selector"></button>
     <span
-      v-pin="{bottom: '5px', right: '5px'}"
+      v-pin="{bottom: "5px", right: "5px"}"
       class="sale"
       v-show="selectedPart.onSale">Sale!</span>
   </div>
@@ -28,7 +28,7 @@ export default {
       type: String,
       required: true,
       validator(value) {
-        return ['top', 'left', 'center', 'right', 'bottom'].includes(value);
+        return ["top", "left", "center", "right", "bottom"].includes(value);
       },
     },
   },
@@ -51,12 +51,12 @@ export default {
       const { type, id } = this.selectedPart;
 
       this.$router.push({
-        name: 'Parts',
+        name: "Parts",
         params: { partType: type, id },
       });
     },
     emitSelectedPart() {
-      this.$emit('partSelected', this.selectedPart);
+      this.$emit("partSelected", this.selectedPart);
     },
     selectNextPart() {
       this.selectedPartIndex = getNextValidIndex(

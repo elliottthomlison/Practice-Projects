@@ -1,5 +1,5 @@
-import { ref, onMounted } from 'vue';
-import parts from '../data/parts';
+import { ref, onMounted } from "vue";
+import parts from "../data/parts";
 
 const allParts = [...parts.heads, ...parts.arms, ...parts.torsos, ...parts.bases];
 
@@ -22,7 +22,7 @@ export default function useSearch(originalSearchTerm) {
 
   searchInventory(originalSearchTerm);
 
-  onMounted(() => console.log('Mounted: useSearch'));
+  onMounted(() => console.log("Mounted: useSearch"));
 
   return { searchResults: results, search: searchInventory };
 }

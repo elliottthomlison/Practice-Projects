@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import RobotBuilder from './build/RobotBuilder.vue';
-// import Search from './search/Search.vue'
+import RobotBuilder from "./build/RobotBuilder.vue";
+// import Search from "./search/Search.vue"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     RobotBuilder,
     // Search

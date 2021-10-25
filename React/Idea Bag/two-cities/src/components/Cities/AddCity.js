@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button/Button';
 
 function AddCity() {
   return (
@@ -9,8 +10,7 @@ function AddCity() {
         <input id="fromcity" type="text" />
         <label htmlFor="toCity">To:</label>
         <input id="toCity" type="text" />
-        {/* button will go here */}
-        <input type="submit" value="Submit" />
+        <Button />
       </form>
     </div>
   );

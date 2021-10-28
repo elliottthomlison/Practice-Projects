@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
 import Card from '../UI/Card';
-// import './AddUser.css';
 import classes from './AddUser.module.css'
 
 const AddUser = (props) => {

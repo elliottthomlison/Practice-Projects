@@ -1,7 +1,7 @@
 import React from "react";
 
-import Card from "./Card";
-import Button from "../Button/Button";
+import Card from "../../../../../Idea Bag/two-cities/src/components/UI/Card";
+import Button from "../../../../../Idea Bag/two-cities/src/components/Button/Button";
 import classes from "./ErrorModal.module.css";
 
 const ErrorModal = props => {

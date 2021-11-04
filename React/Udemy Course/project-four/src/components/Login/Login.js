@@ -23,7 +23,7 @@ const Login = (props) => {
   //   const identifier = setTimeout(() => {
   //     console.log('Checking form validity!');
   //     setFormIsValid(
-  //       enteredEmail.includes('@') && enteredPassword.trim().length > 6
+  //       enteredEmail.includes('@') && enteredEmail.includes('.com') && enteredPassword.trim().length > 6 && enteredPassword.includes([1, 2, 3, 4, 5])
   //     );
   //   }, 500);
 
@@ -37,7 +37,7 @@ const Login = (props) => {
     setEnteredEmail(event.target.value);
 
     setFormIsValid(
-      event.target.value.includes('@') && enteredPassword.trim().length > 6
+      event.target.value.includes('@') && event.target.value.includes('.com') && enteredPassword.trim().length > 6 && enteredPassword.includes([0-9])
     );
   };
 

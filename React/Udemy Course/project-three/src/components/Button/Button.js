@@ -8,9 +8,8 @@ const Button = (props) => {
       className={classes.button}
       type={props.type || "button"}
       onClick={props.onClick}
-      // onClick={console.log("test")}
     >
-        {props.children}
+      {props.children}
     </button>
   );
 };

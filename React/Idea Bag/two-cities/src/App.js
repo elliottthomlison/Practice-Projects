@@ -1,13 +1,13 @@
 import React from "react";
 import AddCity from "./components/Cities/AddCity";
-import MapContainer from "./components/Map/MapContainer";
+import Map from "./components/Map/Map";
 
 
 function App() {
   return (
     <div>
       <AddCity />
-      <MapContainer />
+      <Map />
     </div>
   );
 }

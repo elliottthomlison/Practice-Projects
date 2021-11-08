@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Toronto",
+        "latitude": "43.7417",
+        "longitude": "-79.3733" 
+    },
+    {
+        "id": 2,
+        "name": "Surrey",
+        "latitude": "49.1900",
+        "longitude": "-122.8489" 
+    },
+    {
+        "id": 3,
+        "name": "Calgary",
+        "latitude": "51.0500",
+        "longitude": "-114.0667" 
+    }
+]

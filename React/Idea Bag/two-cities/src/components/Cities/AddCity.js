@@ -3,6 +3,7 @@ import Button from "../Button/Button";
 import Card from "../UI/Card";
 import classes from "./AddCity.module.css"
 import ErrorModal from "../UI/ErrorModal";
+// import Data from "../Data/Cities.json"
 
 const AddCity = (props) => {
   const [enteredFromCity, setEnteredFromCity] = useState("");
@@ -23,7 +24,7 @@ const AddCity = (props) => {
     if (enteredFromCity.trim().length === 0) {
       setError({
         title: "Invalid input",
-        message: "Please enter a valid information into the from city.",
+        message: "Please enter a valid information into the from city section.",
       });
       return;
     }
@@ -31,7 +32,7 @@ const AddCity = (props) => {
     if (enteredToCity.trim().length === 0) {
       setError({
         title: "Invalid input",
-        message: "Please enter a valid information into the to city.",
+        message: "Please enter a valid information into the to city section.",
       });
       return;
     }
@@ -42,10 +43,12 @@ const AddCity = (props) => {
 
   const fromCityChangeHandler = (event) => {
     setEnteredFromCity(event.target.value);
+
   }
 
   const toCityChangeHandler = (event) => {
     setEnteredToCity(event.target.value);
+
   }
 
   const errorHandler = () => {
@@ -59,9 +62,9 @@ const AddCity = (props) => {
       <Card className={classes.input}>
         <form onSubmit={addCityHandler}>
           <label htmlFor="fromCity">From</label>
-          <input id="fromCity" type="text" value={enteredFromCity} onChange={fromCityChangeHandler} placeholder="Vancouver" />
+          <input id="fromCity" type="text" value={enteredFromCity} onChange={fromCityChangeHandler} />
           <label htmlFor="toCity">To</label>
-          <input id="toCity" type="text"  value={enteredToCity} onChange={toCityChangeHandler} placeholder="Toronto" />
+          <input id="toCity" type="text"  value={enteredToCity} onChange={toCityChangeHandler}  />
           <Button name="Calculate"/>
         </form>
       </Card>

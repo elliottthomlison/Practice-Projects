@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Card from "../../UI/Card/Card.js"
+import classes from "../../UI/Card/Card.module.css"
 
 import Button from "../../UI/Button/Button";
 import "./CourseInput.css";
@@ -24,13 +26,15 @@ const CourseInput = props => {
   };
 
   return (
-    <form onSubmit={formSubmitHandler}>
-      <div className={`form-control ${!isValid ? "invalid" : ""}`}>
-        <label>Course Goal</label>
-        <input type="text" onChange={goalInputChangeHandler} />
-      </div>
-      <Button type="submit">Add Goal</Button>
-    </form>
+    <Card classname={classes.input}>
+      <form onSubmit={formSubmitHandler}>
+        <div className={`form-control ${!isValid ? "invalid" : ""}`}>
+          <label>Course Goal</label>
+          <input type="text" onChange={goalInputChangeHandler} />
+        </div>
+        <Button type="submit">Add Goal</Button>
+      </form>
+    </Card>
   );
 };
 

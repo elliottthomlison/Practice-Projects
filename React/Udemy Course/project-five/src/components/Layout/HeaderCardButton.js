@@ -2,9 +2,9 @@ import { useContext, useEffect, useState } from 'react';
 
 import CartIcon from '../Cart/CartIcon';
 import CartContext from '../../store/cart-context';
-import classes from './HeaderCartButton.module.css';
+import classes from './HeaderCardButton.module.css';
 
-const HeaderCartButton = (props) => {
+const HeaderCardButton = (props) => {
   const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
   const cartCtx = useContext(CartContext);
 
@@ -42,4 +42,4 @@ const HeaderCartButton = (props) => {
   );
 };
 
-export default HeaderCartButton;
+export default HeaderCardButton;

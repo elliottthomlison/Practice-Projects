@@ -38,6 +38,7 @@ namespace MyMusicPlayer
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.Play = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,6 +140,10 @@ namespace MyMusicPlayer
             this.Play.UseVisualStyleBackColor = false;
             this.Play.Click += new System.EventHandler(this.button6_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // MP3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -173,6 +178,7 @@ namespace MyMusicPlayer
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button Play;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

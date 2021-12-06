@@ -3,16 +3,16 @@
         "name": "iPhone 13",
         "price": "1,135.00",
         "description": "Durability that’s front and centre. And edge to edge. A lightning-fast chip that leaves the competition behind. A huge leap in battery life you’ll notice every day.",
-        "ratings": "",
+        "ratings": 4.5,
         "images":
             [{
-                "public_id" : "",
-                "url" : ""
+                "public_id" : "products/tsajdsaoidjasd",
+                "url" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.apple.com%2Fca%2Fshop%2Fbuy-iphone%2Fiphone-13&psig=AOvVaw3JTLbZiOCWEa-Th5DEWtj0&ust=1637869793087000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIiTnMvisfQCFQAAAAAdAAAAABAF"
             }],
-        "category": "",
-        "seller": "",
-        "stock": "",
-        "numOfReviews": "",
+        "category": "Electronics",
+        "seller": "Ebay",
+        "stock": 50,
+        "numOfReviews": 32,
         "reviews": []
     }
 ]

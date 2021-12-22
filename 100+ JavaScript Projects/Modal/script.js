@@ -1,15 +1,18 @@
-window.onload = function () {
-  const submit = document.getElementById("submit");
+window.onload = function() {
+  const modalOpen = document.getElementById("modal-open")
+  const modalClose = document.getElementById("modal-close")
+  const modalBody = document.getElementById("modal")
 
-  submit.onclick = function (input) {
-    input.preventDefault();
 
-    let message = document.getElementById("message").value;
-    document.getElementById("lastMessage").innerHTML = message;
-    clearFields();
-  };
+  modalOpen.onclick = function() {
+    modalOpen.style.display = "none"
+    modalBody.style.display = "block"
+  }
 
-  const clearFields = () => {
-    document.getElementById("message").value = "";
-  };
-};
+
+  modalClose.onclick = function test() {
+    modalOpen.style.display = "block"
+    modalBody.style.display = "none"
+  }
+
+}

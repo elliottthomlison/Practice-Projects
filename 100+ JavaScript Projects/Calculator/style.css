@@ -3,9 +3,9 @@
     font-size: 42px;
 }
 
-.output {
+.input {
    background-color: black; 
-   width: 50px;
+   width: 632px;
    height: 50px;
 }
 
@@ -30,3 +30,5 @@ button {
 #reset {
     background-color: lightblue;
 }
+
+.

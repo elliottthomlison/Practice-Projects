@@ -1,22 +1,26 @@
 * {
     color: white;
-    font-size: 42px;
+    font-size: 55px;
 }
 
 .input {
    background-color: black; 
-   width: 632px;
-   height: 50px;
+   width: 531px;
+   height: 125px;
+   margin-bottom: 10px;
 }
 
 #calculator-body {
-
+    display: block;
+    margin-left: 35%;
+    margin-top: 3%
 }
 
 button {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .math {
@@ -29,4 +33,8 @@ button {
 
 #reset {
     background-color: lightblue;
+}
+
+#result { 
+    background-color: lightgreen;
 }

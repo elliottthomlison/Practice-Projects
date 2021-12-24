@@ -1,4 +1,4 @@
-"use strict";
+window.onload() = function {
 
 var input = document.getElementById('input'), // input/output button
   number = document.querySelectorAll('.numbers div'), // number buttons
@@ -118,3 +118,4 @@ result.addEventListener("click", function() {
 clear.addEventListener("click", function() {
   input.innerHTML = "";
 })
+}

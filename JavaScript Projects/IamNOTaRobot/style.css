@@ -7,9 +7,13 @@
 }
 
 .grid-item {
-    background-color: aqua;
     border: 1px solid blue;
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    height: 80px;
+}
+
+#checkbox { 
+    cursor: pointer;
 }

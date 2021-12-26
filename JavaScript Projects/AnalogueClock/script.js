@@ -18,7 +18,6 @@ window.onload = function () {
     ctx.fill()
     grad = ctx.createRadialGradient(0, 0, radius*0.95, 0, 0, radius*1.05)
     grad.addColorStop(0, '#333')
-    
     ctx.arc(0, 0, radius, 0, 3 * Math.PI);
     ctx.fillStyle = "white";
     ctx.fill();

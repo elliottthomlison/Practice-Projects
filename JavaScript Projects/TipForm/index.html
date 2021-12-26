@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="box">
+        <form>
+            <label for="billAmount">Bill Amount:</label><br>
+            <input type="text" id="billAmount" name="billAmount"><br>
+            <label for="personAmount">Number of People:</label><br>
+            <input type="text" id="personAmount" name="personAmount">
+            <br />
+            <label for="tipAmount">Choose a Tip Amount:</label>
+            <select name="tipAmount" id="tipAmount">
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+            </select>
+            <br />
+            <button id="resultButton">Result</button>
+            <br />
+            <span class="results">Test</span>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,51 +1,12 @@
-window.onload = function () {
-  let sliderImages = document.querySelectorAll(".slide"),
-    arrowLeft = document.querySelector("#arrow-left"),
-    arrowRight = document.querySelector("#arrow-right"),
-    current = 0;
+const canvas = document.getElementById('canvas');
+const context = canvas.getContext("2d");
+const radius = canvas.height / 2;
+context.translate(radius, radius);
+radius = radius * 0.90
+drawClock();
 
-  // Clear all images
-  function reset() {
-    for (let i = 0; i < sliderImages.length; i++) {
-      sliderImages[i].style.display = "none";
-    }
-  }
-
-  // Init slider
-  function startSlide() {
-    reset();
-    sliderImages[0].style.display = "block";
-  }
-
-  // Show prev
-  function slideLeft() {
-    reset();
-    sliderImages[current - 1].style.display = "block";
-    current--;
-  }
-
-  // Show next
-  function slideRight() {
-    reset();
-    sliderImages[current + 1].style.display = "block";
-    current++;
-  }
-
-  // Left arrow click
-  arrowLeft.addEventListener("click", function () {
-    if (current === 0) {
-      current = sliderImages.length;
-    }
-    slideLeft();
-  });
-
-  // Right arrow click
-  arrowRight.addEventListener("click", function () {
-    if (current === sliderImages.length - 1) {
-      current = -1;
-    }
-    slideRight();
-  });
-
-  startSlide();
-};
+function drawClock() {
+  context.arc(0, 0, radius, 0, 2*Math.PI);
+  context.fillStyle = "White";
+  context.fill();
+}

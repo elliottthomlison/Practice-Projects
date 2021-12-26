@@ -1,0 +1,11 @@
+
+.active-search:active {
+    width: 0px;
+}
+
+.active-search {
+    width: 80px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    padding: 10px 5px;
+}

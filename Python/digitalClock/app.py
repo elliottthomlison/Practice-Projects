@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-from tkinter import
+from tkinter import font
 import time
 import datetime
 
@@ -15,3 +15,9 @@ def clock_time():
     text.set(time)
 
     root.after(1000, clock_time)
+
+root = Tk()
+root.attributes("-fullscreen", False)
+root.configure(background = "black")
+root.bind("x", quit)
+

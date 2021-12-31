@@ -20,4 +20,11 @@ root = Tk()
 root.attributes("-fullscreen", False)
 root.configure(background = "black")
 root.bind("x", quit)
+root.after(1000, clock_time)
 
+words = font.Font(family = "Helvetica", size="120", weight="bold")
+text = StringVar()
+label = ttk.Label(root, textvariable=text, font=fnt, foreground="white", background="black")
+label.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+root.mainLoop()

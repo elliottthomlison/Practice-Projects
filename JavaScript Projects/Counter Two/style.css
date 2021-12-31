@@ -1,0 +1,9 @@
+.col-md-6 {
+    border: 5px black solid;
+    height: 350px;
+    margin-top: 150px;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5%
+}
+

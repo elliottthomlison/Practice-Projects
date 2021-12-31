@@ -1,19 +1,20 @@
 window.onload = function() {
+    const increase = document.querySelector('.btn-success')
+    const decrease = document.querySelector('.btn-danger')
+    const zero = document.querySelector('.btn-primary')
+    const displayNumber = document.querySelector('#number')
 
-    const decrease = document.getElementById("decrease-button")
-    const reset = document.getElementById("reset-button")
-    const increase = document.getElementById("increase-button")
-    const displayNumber = document.getElementById("displayNumber")
+    increase.onclick = function() {
+        displayNumber.innerHTML ++
+    }
 
     decrease.onclick = function() {
         displayNumber.innerHTML --
     }
 
-    reset.onclick = function() {
-        displayNumber.innerHTML = 0 
+    zero.onclick = function() {
+        displayNumber.innerHTML = 0
     }
-    
-    increase.onclick = function() {
-        displayNumber.innerHTML ++
-    }
+
+
 }

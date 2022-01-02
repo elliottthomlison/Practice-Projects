@@ -4,8 +4,18 @@ import "./Main.css";
 
 function Main() {
     return (
-        <div>
-            test
+        <div className="maindiv">
+            <h1>Navbar</h1>
+
+            <div>
+                <button><i class="fas fa-bars"></i></button>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+
         </div>
     )
 }

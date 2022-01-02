@@ -1,0 +1,16 @@
+li {
+    list-style-type: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.maindiv {
+    background-color: aquamarine;
+    height: 100vh;
+}
+
+button {
+    margin: 10px;
+}

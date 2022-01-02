@@ -9,6 +9,7 @@ li {
 .maindiv {
     background-color: aquamarine;
     height: 100vh;
+    transition: 0.5s;
 }
 
 button {

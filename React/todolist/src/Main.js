@@ -8,7 +8,6 @@ function Main() {
 
     function addTask() {
         setTaskList([...taskList, taskName])
-        this.taskName.value = ''
     }
     
     function deleteTask(index) {

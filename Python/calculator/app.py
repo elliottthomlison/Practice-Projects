@@ -69,29 +69,52 @@ class Application (Frame):
         self.addButton = Button(self, bg = "white", bd=12,
         text="+", padx=33, pady=25, font=("Arial", 20, "bold"), 
         command=lambda : self.buttonClick("+"))
-        self.addButton.grid(row=2, column=0, sticky=W)
+        self.addButton.grid(row=2, column=3, sticky=W)
 
         self.subButton = Button(self, bg = "white", bd=12,
         text="-", padx=33, pady=25, font=("Arial", 20, "bold"), 
         command=lambda : self.buttonClick("-"))
-        self.subButton.grid(row=2, column=0, sticky=W)
+        self.subButton.grid(row=3, column=3, sticky=W)
 
         self.multButton = Button(self, bg = "white", bd=12,
         text="*", padx=33, pady=25, font=("Arial", 20, "bold"), 
         command=lambda : self.buttonClick("*"))
-        self.multButton.grid(row=2, column=0, sticky=W)
+        self.multButton.grid(row=4, column=3, sticky=W)
 
         self.divButton = Button(self, bg = "white", bd=12,
-        text="/", padx=33, pady=25, font=("Arial", 20, "bold"), 
-        command=lambda : self.buttonClick("/"))
-        self.divButton.grid(row=2, column=0, sticky=W)
+        text="/", padx=33, pady=25, 
+        command=lambda : self.buttonClick("/"), font=("Arial", 20, "bold"))
+        self.divButton.grid(row=5, column=3, sticky=W)
 
         self.equalButton = Button(self, bg = "white", bd=12,
-        text="=", padx=33, pady=25, font=("Arial", 20, "bold"), 
-        command=lambda : self.buttonClick("="))
-        self.equalButton.grid(row=2, column=0, sticky=W, columnspan=2)
+        text="=", padx=100, pady=25, 
+        command= self.calculateTask, font=("Arial", 20, "bold"))
+        self.equalButton.grid(row=5, column=1, sticky=W, columnspan=2)
 
         self.clearButton = Button(self, bg = "white", bd=12,
-        text="AC", padx=33, pady=25, font=("Arial", 20, "bold"), 
-        command=lambda : self.buttonClick("AC"))
-        self.clearButton.grid(row=2, column=0, sticky=W)
+        text="AC", font=("Arial", 20, "bold") width=28, padx=7, command=self.ClearDisplay)
+        self.clearButton.grid(row=1, columnspan=4, sticky=W)
+
+    def buttonClick(self, number):
+        self.task = str(self.task) + str(number)
+        self.UserIn.set(self.task)
+
+    def calculateTask(self):
+        self.data = self.user_input.get()
+        try:
+            self.answer = eval(self.data)
+            self.displayText(self.answer)
+            self.task = self.answer
+        
+        except SyntaxError as e:
+            self.displayText("invalid syntax")
+            self.task = ""
+    
+    def displayText(self, value):
+        self.user_input.delete(0, END)
+        self.user_input.insert(0, value)
+    
+    def clearDisplay(self):
+        self.task = ""
+        self.user_input.delete(0, END)
+        self.user_input.insert(0, "0")

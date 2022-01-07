@@ -1,14 +1,14 @@
 from tkinter import *
-class Application (Frame):
+class Application(Frame):
 
-    def _init_(self,master)
-    super(Application, self)._init_(master)
-    self.task=""
-    self.UserIn = StringVar()
-    self.grid()
-    self.create_widgets()
+    def _init_(self,master):
+        super(Application, self)._init_(master)
+        self.task=""
+        self.UserIn = StringVar()
+        self.grid()
+        self.create_widgets()
 
-    def create_widgets(self)
+    def create_widgets(self):
         self.user_input = Entry(self, bg = "gray", bd=29, 
         insertwidth = 4, width = 24,
         font= ("Arial", 20, "bold"), textvariable=self.UserIn, justify=RIGHT)
@@ -91,9 +91,10 @@ class Application (Frame):
         command= self.calculateTask, font=("Arial", 20, "bold"))
         self.equalButton.grid(row=5, column=1, sticky=W, columnspan=2)
 
-        self.clearButton = Button(self, bg = "white", bd=12,
-        text="AC", font=("Arial", 20, "bold") width=28, padx=7, command=self.ClearDisplay)
-        self.clearButton.grid(row=1, columnspan=4, sticky=W)
+        # self.clearButton = Button(self, bg = "white", bd=12,
+        # text="AC", padx=7, pady=25, 
+        # command=self.ClearDisplay, font=("Arial", 20, "bold")
+        # self.clearButton.grid(row=1, columnspan=4, sticky=W)
 
     def buttonClick(self, number):
         self.task = str(self.task) + str(number)
@@ -118,3 +119,12 @@ class Application (Frame):
         self.task = ""
         self.user_input.delete(0, END)
         self.user_input.insert(0, "0")
+
+    calculator = Tk()
+
+    calculator.title("Calculator")
+    app = Application(calculator)
+
+    calculator.resizable(width = False, height = False)
+    
+    calculator.mainloop()

@@ -2,9 +2,8 @@ import React from 'react';
 
 function Footer() {
     return (
-        <div>
-            <h1>This is footer</h1>
-
+        <div style={{backgroundColor: 'brown', padding: '15px'}}>
+            <h1 style={{color: 'white'}}>Typed by Elliott Thomlison</h1>
         </div>
     )
 }

@@ -1,0 +1,10 @@
+img {
+    border-radius: 5px;
+    height: 200px;
+    width: 500px;
+}
+
+p {
+    margin-top: 15px;
+    font-weight: bold;
+}

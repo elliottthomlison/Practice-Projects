@@ -1,6 +1,7 @@
 // global variables
 const courses = document.querySelector('#courses-list'),
-      shoppingCartContent = document.querySelector('#cart-content tbody')
+      shoppingCartContent = document.querySelector('#cart-content tbody'),
+      clearCartBtn = document.querySelector('#clear-cart')
 
 // listeners
 loadEventListeners()
@@ -9,6 +10,10 @@ function loadEventListeners() {
     
     //when a new courses is added 
     courses.addEventListener('click', buyCourse)
+
+    //when the remove button is clicked
+    shoppingCartContent.addEventListener('click', removeCourse)
+    clearCartBtn.addEventListener('click', clearCart)
 }
 
 // functions 
@@ -63,4 +68,55 @@ function addIntoCart(course) {
     `
     //add into the shopping cart
     shoppingCartContent.appendChild(row)
+
+    //add course into local storage
+    saveIntoStorage(course)
+}
+
+//remove course from the dom
+function removeCourse(e) {
+    if(e.target.classList.contains('remove')){
+        //this will remove the element from the dom
+        e.target.parentElement.parentElement.remove();
+    }
+}
+
+//clear the shopping cart
+function clearCart() {
+    //easier way
+    // shoppingCartContent.innerHTML = '';
+
+    //recommended way
+    while(shoppingCartContent.firstChild) {
+        shoppingCartContent.removeChild(shoppingCartContent.firstChild)
+    }
+}
+
+//add courses into local storage
+function saveIntoStorage(course) {
+    let courses = getCoursesFromStorage()
+
+    //add course into the array
+    courses.push(course)
+
+    //since storage only saves strings we need to convert JSON into a string
+    localStorage.setItem('courses', JSON.stringify(courses))
+}
+
+//get the contents from the local storage
+function getCoursesFromStorage() {
+    let courses;
+
+    //if something exists in storage then we get the value, otherwise create an empty array
+    if (localStorage.getItem('courses') === null) {
+        courses = [] 
+    } else {
+        courses = JSON.parse(localStorage.getItem('courses'))
+    } 
+    return courses
+}
+
+//remove the contents from the local storage
+function removeCoursesFromStorage() {
+
 }

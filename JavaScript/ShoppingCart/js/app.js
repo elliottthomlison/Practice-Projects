@@ -1,11 +1,8 @@
-// variables
-const courses = document.querySelector('#courses-list')
-
-
-
+// global variables
+const courses = document.querySelector('#courses-list'),
+      shoppingCartContent = document.querySelector('#cart-content tbody')
 
 // listeners
-
 loadEventListeners()
 
 function loadEventListeners() {
@@ -13,9 +10,6 @@ function loadEventListeners() {
     //when a new courses is added 
     courses.addEventListener('click', buyCourse)
 }
-
-
-
 
 // functions 
 function buyCourse(e) {
@@ -41,6 +35,32 @@ function getCourseInfo(course) {
         price: course.querySelector('.price span').textContent,
         id: course.querySelector('a').getAttribute('data-id')
     }
-    console.log(courseInfo)
+    // insert into the shipping cart
+    addIntoCart(courseInfo)
+}
 
+// display the selected course in the shopping cart
+function addIntoCart(course) {
+    // create a <tr> to fit inside the shopping cart's table 
+    const row = document.createElement('tr')
+
+    // build the template
+    row.innerHTML = `
+        <tr>
+            <td>
+                <img src="${course.image}" width=100>
+            </td>
+            <td>
+                ${course.title}
+            </td>
+            <td>
+            ${course.price}
+            </td>
+            <td>
+                <a href="#" class="remove" data-id="${course.id}">X</a>
+            </td>
+        </tr>
+    `
+    //add into the shopping cart
+    shoppingCartContent.appendChild(row)
 }

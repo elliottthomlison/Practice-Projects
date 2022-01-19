@@ -31,5 +31,39 @@ function appInit() {
 
 // validate the fields
 function validateField() {
-    console.log('From validateField')
+    let errors;
+
+    // validate the length of the field
+    // this = lines 18-20
+    validateLength(this)
+
+    if (this.type === 'email') {
+        validateEmail(this)
+    }
+}
+
+// validate the length of the fields 
+function validateLength(field) {
+    if(field.value.length > 0) {
+        field.style.borderBottomColor = 'green'
+        field.classList.remove('error')
+    } else {
+        field.style.borderBottomColor = 'red'
+        field.classList.add('error')
+    }
+}
+
+// validate the email field and check for the @
+
+function validateEmail(field) {
+    let emailText = field.value
+
+    // check if the emailText contains the @ sign
+    if(emailText.indexOf('@') !== -1) {
+        field.style.borderBottomColor = 'green'
+        field.classList.remove('error')
+    } else {
+        field.style.borderBottomColor = 'red'
+        field.classList.add('error')
+    }
 }
